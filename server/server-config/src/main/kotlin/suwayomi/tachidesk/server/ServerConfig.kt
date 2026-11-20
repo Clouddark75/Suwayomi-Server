@@ -1158,6 +1158,38 @@ class ServerConfig(
         minLength = 1
     )
 
+    val downloadChaptersInParallel: MutableStateFlow<Int> by IntSetting(
+        protoNumber = 101,
+        group = SettingGroup.DOWNLOADER,
+        privacySafe = true,
+        defaultValue = 4,
+        min = 1,
+        max = 32,
+        description =
+            "How many chapters of the same source are downloaded at the same time. " +
+                "Higher values are faster but make more simultaneous requests to the source",
+    )
+
+    val rateLimitEnabled: MutableStateFlow<Boolean> by BooleanSetting(
+        protoNumber = 102,
+        group = SettingGroup.DOWNLOADER,
+        privacySafe = true,
+        defaultValue = false,
+        description =
+            "Apply the rate limits that sources/extensions define for their requests. " +
+                "Disabled by default; enable it in case a source starts blocking or throttling you",
+    )
+
+    val disableCoverLoadingWhileBrowsing: MutableStateFlow<Boolean> by BooleanSetting(
+        protoNumber = 103,
+        group = SettingGroup.DOWNLOADER,
+        privacySafe = true,
+        defaultValue = false,
+        description =
+            "Do not download covers of titles that are not in the library (e.g. while browsing a source) to save data. " +
+                "Covers that are already cached and covers of library titles are still shown",
+    )
+
     /** ****************************************************************** **/
     /**                                                                    **/
     /**                          Renamed settings                          **/
