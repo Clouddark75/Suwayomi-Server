@@ -4,6 +4,13 @@ on:
   push:
     branches:
       - master
+  workflow_dispatch:
+    inputs:
+      branch:
+        description: 'Branch to build (leave empty to build the branch selected in "Use workflow from")'
+        required: false
+        default: ''
+        type: string
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
@@ -25,10 +32,10 @@ jobs:
     needs: check_wrapper
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout master branch
+      - name: Checkout branch
         uses: actions/checkout@v7
         with:
-          ref: master
+          ref: ${{ inputs.branch || github.ref_name }}
           path: master
           fetch-depth: 0
 
@@ -248,4 +255,3 @@ jobs:
           repository: "Suwayomi/Suwayomi-Server-preview"
           tag_name:  ${{ steps.GenTagName.outputs.value }}
           files: release/*
-
