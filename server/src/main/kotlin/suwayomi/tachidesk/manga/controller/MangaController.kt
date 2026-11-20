@@ -50,13 +50,23 @@ object MangaController {
                     ctx.getAttribute(Attribute.TachideskUser).requireUser()
                 }
                 ctx.future {
-                    future { Manga.getMangaThumbnail(mangaId) }
-                        .thenApply {
-                            ctx.header("content-type", it.second)
+                    future {
+                        if (Manga.isThumbnailLoadingBlocked(mangaId)) null else Manga.getMangaThumbnail(mangaId)
+                    }.thenApply { thumbnail ->
+                        if (thumbnail != null) {
+                            ctx.header("content-type", thumbnail.second)
                             val httpCacheSeconds = 1.days.inWholeSeconds
                             ctx.header("cache-control", "max-age=$httpCacheSeconds")
-                            ctx.result(it.first)
+                            ctx.result(thumbnail.first)
+                        } else {
+                            // cover loading is disabled: send a placeholder that must not be cached by the client,
+                            // otherwise the real cover would not show up after the setting got disabled again
+                            val placeholder = Manga.getBlockedThumbnailPlaceholder()
+                            ctx.header("content-type", placeholder.second)
+                            ctx.header("cache-control", "no-store")
+                            ctx.result(placeholder.first)
                         }
+                    }
                 }
             },
             withResults = {
