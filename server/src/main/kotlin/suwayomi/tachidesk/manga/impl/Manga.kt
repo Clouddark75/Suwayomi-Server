@@ -49,6 +49,7 @@ import suwayomi.tachidesk.manga.impl.util.source.GetSource.getSourceOrNull
 import suwayomi.tachidesk.manga.impl.util.source.GetSource.getSourceOrStub
 import suwayomi.tachidesk.manga.impl.util.source.StubSource
 import suwayomi.tachidesk.manga.impl.util.storage.ImageResponse.clearCachedImage
+import suwayomi.tachidesk.manga.impl.util.storage.ImageResponse.findFileNameStartingWith
 import suwayomi.tachidesk.manga.impl.util.storage.ImageResponse.getImageResponse
 import suwayomi.tachidesk.manga.impl.util.storage.ImageUtil
 import suwayomi.tachidesk.manga.impl.util.updateMangaDownloadDir
@@ -63,11 +64,13 @@ import suwayomi.tachidesk.manga.model.table.MangaUserTable
 import suwayomi.tachidesk.manga.model.table.getWithUserData
 import suwayomi.tachidesk.manga.model.table.toDataClass
 import suwayomi.tachidesk.server.ApplicationDirs
+import suwayomi.tachidesk.server.serverConfig
 import uy.kohesive.injekt.injectLazy
 import java.io.File
 import java.io.IOException
 import java.io.InputStream
 import java.time.Instant
+import java.util.Base64
 import kotlin.time.Duration.Companion.minutes
 
 private val logger = KotlinLogging.logger { }
@@ -487,23 +490,58 @@ object Manga {
         }
     }
 
+    /** 1x1 transparent PNG, sent instead of a cover while the cover loading is blocked (see [isThumbnailLoadingBlocked]) */
+    private val blockedThumbnailPlaceholder: ByteArray by lazy {
+        Base64.getDecoder().decode(
+            "iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAC0lEQVR4nGNgAAIAAAUAAXpeqz8AAAAASUVORK5CYII=",
+        )
+    }
+
+    fun getBlockedThumbnailPlaceholder(): Pair<InputStream, String> = blockedThumbnailPlaceholder.inputStream() to "image/png"
+
+    private fun isMangaInLibrary(mangaId: Int): Boolean =
+        transaction {
+            MangaUserTable
+                .selectAll()
+                .where {
+                    MangaUserTable.manga eq mangaId and (MangaUserTable.inLibrary eq true)
+                }.any()
+        }
+
+    private fun getMangaSourceId(mangaId: Int): Long? =
+        transaction {
+            MangaTable
+                .select(MangaTable.sourceReference)
+                .where { MangaTable.id eq mangaId }
+                .firstOrNull()
+                ?.get(MangaTable.sourceReference)
+        }
+
+    /**
+     * Whether serving the thumbnail would have to download it, even though the loading of covers was disabled via
+     * [suwayomi.tachidesk.server.ServerConfig.disableCoverLoadingWhileBrowsing].
+     *
+     * Only covers of titles that are not in the library (e.g., while browsing a source) are blocked, and only in case
+     * they are not already cached. Library covers and cached covers never cost any data and are always served.
+     */
+    fun isThumbnailLoadingBlocked(mangaId: Int): Boolean {
+        if (!serverConfig.disableCoverLoadingWhileBrowsing.value) {
+            return false
+        }
+
+        if (isMangaInLibrary(mangaId) || getMangaSourceId(mangaId) == LocalSource.ID) {
+            return false
+        }
+
+        val cachedFile = findFileNameStartingWith(applicationDirs.tempThumbnailCacheRoot, mangaId.toString())
+        val isCached = cachedFile != null && !cachedFile.endsWith(".tmp")
+
+        return !isCached
+    }
+
     suspend fun getMangaThumbnail(mangaId: Int): Pair<InputStream, String> {
-        val mangaInLibrary =
-            transaction {
-                MangaUserTable
-                    .selectAll()
-                    .where {
-                        MangaUserTable.manga eq mangaId and (MangaUserTable.inLibrary eq true)
-                    }.any()
-            }
-        val mangaSource =
-            transaction {
-                MangaTable
-                    .select(MangaTable.sourceReference)
-                    .where { MangaTable.id eq mangaId }
-                    .firstOrNull()
-                    ?.get(MangaTable.sourceReference)
-            }
+        val mangaInLibrary = isMangaInLibrary(mangaId)
+        val mangaSource = getMangaSourceId(mangaId)
 
         if (mangaInLibrary && mangaSource != LocalSource.ID) {
             return try {
