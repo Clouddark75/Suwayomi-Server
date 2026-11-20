@@ -15,10 +15,10 @@ class DownloadQueueItem(
     val mangaId: Int,
     val sourceId: Long,
     var pageCount: Int,
-    var state: DownloadState = Queued,
-    var progress: Float = 0f,
-    var tries: Int = 0,
-    var errorMessage: String? = null,
+    @Volatile var state: DownloadState = Queued,
+    @Volatile var progress: Float = 0f,
+    @Volatile var tries: Int = 0,
+    @Volatile var errorMessage: String? = null,
 ) {
     override fun toString(): String =
         "$mangaId - $chapterId | state= $state, tries= $tries, progress= $progress, errorMessage= $errorMessage"
