@@ -4,6 +4,7 @@ import android.os.SystemClock
 import okhttp3.Interceptor
 import okhttp3.OkHttpClient
 import okhttp3.Response
+import suwayomi.tachidesk.server.serverConfig
 import java.io.IOException
 import java.util.ArrayDeque
 import java.util.concurrent.Semaphore
@@ -71,6 +72,12 @@ internal class RateLimitInterceptor(
         if (call.isCanceled()) throw IOException("Canceled")
 
         val request = chain.request()
+
+        // rate limiting is opt-in (server.rateLimitEnabled), by default requests are never delayed
+        if (!serverConfig.rateLimitEnabled.value) {
+            return chain.proceed(request)
+        }
+
         when (host) {
             // need rate limit
             null, request.url.host -> {}
