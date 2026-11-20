@@ -1,3 +1,4 @@
+
 name: CI build
 
 on:
@@ -15,6 +16,10 @@ on:
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: true
+
+permissions:
+  contents: write
+  actions: read
 
 jobs:
   check_wrapper:
@@ -43,7 +48,7 @@ jobs:
         uses: actions/setup-java@v6
         with:
           java-version: 25
-          distribution: 'zulu'
+          distribution: zulu
 
       - name: Setup Gradle
         uses: gradle/actions/setup-gradle@v5
@@ -87,6 +92,7 @@ jobs:
   jlink:
     runs-on: ${{ matrix.os }}
     strategy:
+      fail-fast: false
       matrix:
         include:
           - os: ubuntu-latest
@@ -97,25 +103,29 @@ jobs:
             name: macOS-arm64
           - os: macos-15-intel
             name: macOS-x64
-        os: [ubuntu-latest, windows-latest, macos-15, macos-15-intel]
 
     steps:
       - name: Set up JDK
         uses: actions/setup-java@v6
         with:
           java-version: 25
-          distribution: 'zulu'
+          distribution: zulu
 
       - name: Package JDK
-        run: jlink --add-modules java.base,java.compiler,java.datatransfer,java.desktop,java.instrument,java.logging,java.management,java.naming,java.prefs,java.scripting,java.se,java.security.jgss,java.security.sasl,java.sql,java.transaction.xa,java.xml,jdk.attach,jdk.crypto.ec,jdk.jdi,jdk.management,jdk.net,jdk.unsupported,jdk.unsupported.desktop,jdk.zipfs,jdk.accessibility --output suwa --strip-debug --no-man-pages --no-header-files --compress=2
+        run: |
+          jlink --add-modules java.base,java.compiler,java.datatransfer,java.desktop,java.instrument,java.logging,java.management,java.naming,java.prefs,java.scripting,java.se,java.security.jgss,java.security.sasl,java.sql,java.transaction.xa,java.xml,jdk.attach,jdk.crypto.ec,jdk.jdi,jdk.management,jdk.net,jdk.unsupported,jdk.unsupported.desktop,jdk.zipfs,jdk.accessibility --output suwa --strip-debug --no-man-pages --no-header-files --compress=2
 
       - name: Upload JRE package
         uses: actions/upload-artifact@v7
         with:
           name: ${{ matrix.name }}-jre
           path: suwa
+          if-no-files-found: error
 
   bundle:
+    name: Make ${{ matrix.name }} release
+    needs: [build, jlink]
+    runs-on: ubuntu-latest
     strategy:
       fail-fast: false
       matrix:
@@ -134,11 +144,7 @@ jobs:
             jre: macOS-arm64
           - name: windows-x64
             jre: windows-x64
-        name: [debian-all, appimage, linux-assets, linux-x64, macOS-x64, macOS-arm64, windows-x64]
 
-    name: Make ${{ matrix.name }} release
-    needs: [build, jlink]
-    runs-on: ubuntu-latest
     steps:
       - name: Download Jar
         uses: actions/download-artifact@v8
@@ -166,7 +172,7 @@ jobs:
 
       - name: Make ${{ matrix.name }} release
         env:
-          APPIMAGE_UPDATE_REPO: Suwayomi-Server-preview
+          APPIMAGE_UPDATE_REPO: ${{ github.repository }}
         run: |
           mkdir upload
           tar -xvpf scripts.tar.gz
@@ -183,75 +189,94 @@ jobs:
     needs: bundle
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/download-artifact@v8
+      - name: Download Jar
+        uses: actions/download-artifact@v8
         with:
           name: jar
           path: release
-      - uses: actions/download-artifact@v8
+
+      - name: Download debian-all
+        uses: actions/download-artifact@v8
         with:
           name: debian-all
           path: release
-      - uses: actions/download-artifact@v8
+
+      - name: Download appimage
+        uses: actions/download-artifact@v8
         with:
           name: appimage
           path: release
-      - uses: actions/download-artifact@v8
+
+      - name: Download linux-assets
+        uses: actions/download-artifact@v8
         with:
           name: linux-assets
           path: release
-      - uses: actions/download-artifact@v8
+
+      - name: Download linux-x64
+        uses: actions/download-artifact@v8
         with:
           name: linux-x64
           path: release
-      - uses: actions/download-artifact@v8
+
+      - name: Download macOS-x64
+        uses: actions/download-artifact@v8
         with:
           name: macOS-x64
           path: release
-      - uses: actions/download-artifact@v8
+
+      - name: Download macOS-arm64
+        uses: actions/download-artifact@v8
         with:
           name: macOS-arm64
           path: release
-      - uses: actions/download-artifact@v8
+
+      - name: Download windows-x64
+        uses: actions/download-artifact@v8
         with:
           name: windows-x64
           path: release
 
-      - name: Checkout Preview branch
-        uses: actions/checkout@v7
-        with:
-          repository: "Suwayomi/Suwayomi-Server-preview"
-          ref: main
-          path: preview
-          token: ${{ secrets.DEPLOY_PREVIEW_TOKEN }}
-
       - name: Generate Tag Name
         id: GenTagName
+        working-directory: release
         run: |
-          cd release
-          genTag=$(ls *.jar | sed -e's/Suwayomi-Server-\|.jar//g')
+          jar_file=$(find . -maxdepth 1 -type f -name 'Suwayomi-Server-*.jar' -printf '%f\n' | head -n 1)
+
+          if [ -z "$jar_file" ]; then
+            echo "Suwayomi Server JAR not found."
+            exit 1
+          fi
+
+          genTag="${jar_file#Suwayomi-Server-}"
+          genTag="${genTag%.jar}"
+
           echo "$genTag"
-          echo "value=$genTag" >> $GITHUB_OUTPUT
+          echo "value=$genTag" >> "$GITHUB_OUTPUT"
+
+      - name: Checkout current repository
+        uses: actions/checkout@v7
+        with:
+          ref: ${{ github.sha }}
+          path: repository
+          fetch-depth: 0
+          token: ${{ github.token }}
 
       - name: Create Tag
+        working-directory: repository
+        env:
+          TAG: ${{ steps.GenTagName.outputs.value }}
         run: |
-          TAG="${{ steps.GenTagName.outputs.value }}"
-          echo "tag: $TAG"
-          cd preview
-          echo "{ \"latest\": \"$TAG\" }" > index.json
-          git add index.json
-          git config --global user.email \
-            "github-actions[bot]@users.noreply.github.com"
-          git config --global user.name "github-actions[bot]"
-          git commit -m "Updated to $TAG"
-          git push origin main
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git config user.name "github-actions[bot]"
 
-          git tag $TAG
-          git push origin $TAG
+          git tag "$TAG" "$GITHUB_SHA"
+          git push origin "refs/tags/$TAG"
 
       - name: Upload Preview Release
         uses: softprops/action-gh-release@v3
         with:
-          token: ${{ secrets.DEPLOY_PREVIEW_TOKEN }}
-          repository: "Suwayomi/Suwayomi-Server-preview"
-          tag_name:  ${{ steps.GenTagName.outputs.value }}
+          token: ${{ github.token }}
+          tag_name: ${{ steps.GenTagName.outputs.value }}
+          name: ${{ steps.GenTagName.outputs.value }}
           files: release/*
