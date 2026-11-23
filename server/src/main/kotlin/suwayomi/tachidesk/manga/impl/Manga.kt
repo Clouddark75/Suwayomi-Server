@@ -49,7 +49,6 @@ import suwayomi.tachidesk.manga.impl.util.source.GetSource.getSourceOrNull
 import suwayomi.tachidesk.manga.impl.util.source.GetSource.getSourceOrStub
 import suwayomi.tachidesk.manga.impl.util.source.StubSource
 import suwayomi.tachidesk.manga.impl.util.storage.ImageResponse.clearCachedImage
-import suwayomi.tachidesk.manga.impl.util.storage.ImageResponse.findFileNameStartingWith
 import suwayomi.tachidesk.manga.impl.util.storage.ImageResponse.getImageResponse
 import suwayomi.tachidesk.manga.impl.util.storage.ImageUtil
 import suwayomi.tachidesk.manga.impl.util.updateMangaDownloadDir
@@ -525,14 +524,15 @@ object Manga {
                 }.any()
         }
 
-    private fun getMangaSourceId(mangaId: Int): Long? =
-        transaction {
-            MangaTable
-                .select(MangaTable.sourceReference)
-                .where { MangaTable.id eq mangaId }
-                .firstOrNull()
-                ?.get(MangaTable.sourceReference)
-        }
+    /** Whether a fully downloaded cover of the manga exists in the (temporary) thumbnail cache, no matter how old it is */
+    private fun hasCachedThumbnail(mangaId: Int): Boolean {
+        val fileName = mangaId.toString()
+
+        return File("${applicationDirs.tempThumbnailCacheRoot}")
+            .listFiles()
+            .orEmpty()
+            .any { it.isFile && (it.name == fileName || it.name.startsWith("$fileName.")) && !it.name.endsWith(".tmp") }
+    }
 
     /**
      * Whether serving the thumbnail would have to download it, even though the loading of covers was disabled via
@@ -546,19 +546,36 @@ object Manga {
             return false
         }
 
-        if (isMangaInLibrary(mangaId) || getMangaSourceId(mangaId) == LocalSource.ID) {
+        if (isMangaInLibrary(mangaId)) {
             return false
         }
 
-        val cachedFile = findFileNameStartingWith(applicationDirs.tempThumbnailCacheRoot, mangaId.toString())
-        val isCached = cachedFile != null && !cachedFile.endsWith(".tmp")
+        val mangaSource =
+            transaction {
+                MangaTable
+                    .select(MangaTable.sourceReference)
+                    .where { MangaTable.id eq mangaId }
+                    .firstOrNull()
+                    ?.get(MangaTable.sourceReference)
+            }
+        if (mangaSource == LocalSource.ID) {
+            return false
+        }
 
-        return !isCached
+        return !hasCachedThumbnail(mangaId)
     }
 
     suspend fun getMangaThumbnail(mangaId: Int): Pair<InputStream, String> {
         val mangaInLibrary = isMangaInLibrary(mangaId)
-        val mangaSource = getMangaSourceId(mangaId)
+        val mangaEntry =
+            transaction {
+                MangaTable
+                    .select(MangaTable.sourceReference, MangaTable.thumbnailUrlLastFetched)
+                    .where { MangaTable.id eq mangaId }
+                    .firstOrNull()
+            }
+        val mangaSource = mangaEntry?.get(MangaTable.sourceReference)
+        val staleBefore = (mangaEntry?.get(MangaTable.thumbnailUrlLastFetched) ?: 0L) * 1000
 
         if (mangaInLibrary && mangaSource != LocalSource.ID) {
             ThumbnailDownloadHelper.refreshIfStale(mangaId, staleBefore)
@@ -570,7 +587,10 @@ object Manga {
             }
         }
 
-        return fetchMangaThumbnail(mangaId, staleBefore)
+        // while the cover loading is disabled, cached covers are served as they are, a stale one must not get re-downloaded
+        val effectiveStaleBefore = if (serverConfig.disableCoverLoadingWhileBrowsing.value) 0L else staleBefore
+
+        return fetchMangaThumbnail(mangaId, effectiveStaleBefore)
     }
 
     fun clearThumbnail(mangaId: Int) {
