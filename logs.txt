@@ -1,0 +1,432 @@
+1795594094.757 11026 14294 15654 W app.taihoo: Long monitor contention with owner OkHttp https://blayvia.com/... (14263) at okhttp3.Response b4.c(okhttp3.Interceptor$Chain, okhttp3.Request, y6)(r8-map-id-4f645ee894bfb1b9374633d75e4acec2321536bd9b7ff52c5c1b5bd3f98c82d6:339) waiters=0 in okhttp3.Response b4.c(okhttp3.Interceptor$Chain, okhttp3.Request, y6) for 170ms
+1795594095.303 11026 14294 14263 D AedexDebug: handle=NbKPfsHeYgZq1Vwn8nf2XFZAiprr9gCehbtT1QLEo7JIJAMwaos25oUD7tULTCvj14S0Sl_NTyW8Sk348KLqzidHm3dT7qJsWUIIUhWk640tZioH raw=1244807 trailerLength=23
+1795594095.303 11026 14294 14263 D AedexDebug: handle=NbKPfsHeYgZq1Vwn8nf2XFZAiprr9gCehbtT1QLEo7JIJAMwaos25oUD7tULTCvj14S0Sl_NTyW8Sk348KLqzidHm3dT7qJsWUIIUhWk640tZioH decodedMagic=AEDE5801 keyLength=16
+1795594095.303 11026 14294 14263 D AedexDebug: handle=NbKPfsHeYgZq1Vwn8nf2XFZAiprr9gCehbtT1QLEo7JIJAMwaos25oUD7tULTCvj14S0Sl_NTyW8Sk348KLqzidHm3dT7qJsWUIIUhWk640tZioH raw=1244807 trailer=true cleanLen=1244782 keyLength=16 xorKey=186 gutter=4
+1795594095.303 11026 14294 14263 D AedexDebug: PAGE_DATA handle=NbKPfsHeYgZq1Vwn8nf2XFZAiprr9gCehbtT1QLEo7JIJAMwaos25oUD7tULTCvj14S0Sl_NTyW8Sk348KLqzidHm3dT7qJsWUIIUhWk640tZioH url=https://blayvia.com/lector/p/NbKPfsHeYgZq1Vwn8nf2XFZAiprr9gCehbtT1QLEo7JIJAMwaos25oUD7tULTCvj14S0Sl_NTyW8Sk348KLqzidHm3dT7qJsWUIIUhWk640tZioH/?q=hq key=31363630363936353166616331653165
+1795594095.303 11026 14294 14263 D AedexDebug: handle=NbKPfsHeYgZq1Vwn8nf2XFZAiprr9gCehbtT1QLEo7JIJAMwaos25oUD7tULTCvj14S0Sl_NTyW8Sk348KLqzidHm3dT7qJsWUIIUhWk640tZioH stage=xorComplete xorKey=186 header=5249464666FE1200
+1795594095.407 11026 14294 14263 D AedexDebug: handle=NbKPfsHeYgZq1Vwn8nf2XFZAiprr9gCehbtT1QLEo7JIJAMwaos25oUD7tULTCvj14S0Sl_NTyW8Sk348KLqzidHm3dT7qJsWUIIUhWk640tZioH stage=bitmap width=824 height=10064 gutter=4
+1795594095.407 11026 14294 14263 D AedexDebug: handle=NbKPfsHeYgZq1Vwn8nf2XFZAiprr9gCehbtT1QLEo7JIJAMwaos25oUD7tULTCvj14S0Sl_NTyW8Sk348KLqzidHm3dT7qJsWUIIUhWk640tZioH stage=slices count=64 output=760x10000
+1795594096.305 11026 14294 15655 D AedexDebug: handle=qP_GPlILagacBOEqZv9cr4MkxXRZL7J8LxweYCAlSqsQX9vhfuF6hZ_2iyG-PSkYHXU2VsI_oF3SEoKWQYJFoIagSPLZn1nSxy3ICuWIGa9WCva0 raw=1860277 trailerLength=23
+1795594096.306 11026 14294 15655 D AedexDebug: handle=qP_GPlILagacBOEqZv9cr4MkxXRZL7J8LxweYCAlSqsQX9vhfuF6hZ_2iyG-PSkYHXU2VsI_oF3SEoKWQYJFoIagSPLZn1nSxy3ICuWIGa9WCva0 decodedMagic=AEDE5801 keyLength=16
+1795594096.306 11026 14294 15655 D AedexDebug: handle=qP_GPlILagacBOEqZv9cr4MkxXRZL7J8LxweYCAlSqsQX9vhfuF6hZ_2iyG-PSkYHXU2VsI_oF3SEoKWQYJFoIagSPLZn1nSxy3ICuWIGa9WCva0 raw=1860277 trailer=true cleanLen=1860252 keyLength=16 xorKey=186 gutter=4
+1795594096.307 11026 14294 15655 D AedexDebug: PAGE_DATA handle=qP_GPlILagacBOEqZv9cr4MkxXRZL7J8LxweYCAlSqsQX9vhfuF6hZ_2iyG-PSkYHXU2VsI_oF3SEoKWQYJFoIagSPLZn1nSxy3ICuWIGa9WCva0 url=https://blayvia.com/lector/p/qP_GPlILagacBOEqZv9cr4MkxXRZL7J8LxweYCAlSqsQX9vhfuF6hZ_2iyG-PSkYHXU2VsI_oF3SEoKWQYJFoIagSPLZn1nSxy3ICuWIGa9WCva0/?q=hq key=33343536633532663262613830373566
+1795594096.315 11026 14294 15655 D AedexDebug: handle=qP_GPlILagacBOEqZv9cr4MkxXRZL7J8LxweYCAlSqsQX9vhfuF6hZ_2iyG-PSkYHXU2VsI_oF3SEoKWQYJFoIagSPLZn1nSxy3ICuWIGa9WCva0 stage=xorComplete xorKey=186 header=5249464694621C00
+1795594096.361 11026 14294 15654 D AedexDebug: handle=hm-eejQevISvxtYyiFCeTRQ1SmXGIxOuO9wyWMIA-rvzN_h3HUObzW2__7hWm39VN4C7u7y65DSU-R1-5PBH99OBb2ShFJH9fA395WemauUdaGyC raw=2010155 trailerLength=23
+1795594096.361 11026 14294 15654 D AedexDebug: handle=hm-eejQevISvxtYyiFCeTRQ1SmXGIxOuO9wyWMIA-rvzN_h3HUObzW2__7hWm39VN4C7u7y65DSU-R1-5PBH99OBb2ShFJH9fA395WemauUdaGyC decodedMagic=AEDE5801 keyLength=16
+1795594096.362 11026 14294 15654 D AedexDebug: handle=hm-eejQevISvxtYyiFCeTRQ1SmXGIxOuO9wyWMIA-rvzN_h3HUObzW2__7hWm39VN4C7u7y65DSU-R1-5PBH99OBb2ShFJH9fA395WemauUdaGyC raw=2010155 trailer=true cleanLen=2010130 keyLength=16 xorKey=186 gutter=4
+1795594096.362 11026 14294 15654 D AedexDebug: PAGE_DATA handle=hm-eejQevISvxtYyiFCeTRQ1SmXGIxOuO9wyWMIA-rvzN_h3HUObzW2__7hWm39VN4C7u7y65DSU-R1-5PBH99OBb2ShFJH9fA395WemauUdaGyC url=https://blayvia.com/lector/p/hm-eejQevISvxtYyiFCeTRQ1SmXGIxOuO9wyWMIA-rvzN_h3HUObzW2__7hWm39VN4C7u7y65DSU-R1-5PBH99OBb2ShFJH9fA395WemauUdaGyC/?q=hq key=30346637326561653832663636343538
+1795594096.362 11026 14294 15654 D AedexDebug: handle=hm-eejQevISvxtYyiFCeTRQ1SmXGIxOuO9wyWMIA-rvzN_h3HUObzW2__7hWm39VN4C7u7y65DSU-R1-5PBH99OBb2ShFJH9fA395WemauUdaGyC stage=xorComplete xorKey=186 header=524946460AAC1E00
+1795594096.461 11026 14294 14294 D SplineOverScroller: mFlingDuration: 2604,mFlingDistance: 6269.76708984375,mVelocity: 13530
+1795594096.461 11026 14294 14294 I ScrollIdentify: on fling
+1795594096.466 11026 14294 15655 D AedexDebug: handle=qP_GPlILagacBOEqZv9cr4MkxXRZL7J8LxweYCAlSqsQX9vhfuF6hZ_2iyG-PSkYHXU2VsI_oF3SEoKWQYJFoIagSPLZn1nSxy3ICuWIGa9WCva0 stage=bitmap width=824 height=10064 gutter=4
+1795594096.466 11026 14294 15655 D AedexDebug: handle=qP_GPlILagacBOEqZv9cr4MkxXRZL7J8LxweYCAlSqsQX9vhfuF6hZ_2iyG-PSkYHXU2VsI_oF3SEoKWQYJFoIagSPLZn1nSxy3ICuWIGa9WCva0 stage=slices count=64 output=760x10000
+1795594096.512 11026 14294 15654 D AedexDebug: handle=hm-eejQevISvxtYyiFCeTRQ1SmXGIxOuO9wyWMIA-rvzN_h3HUObzW2__7hWm39VN4C7u7y65DSU-R1-5PBH99OBb2ShFJH9fA395WemauUdaGyC stage=bitmap width=824 height=10064 gutter=4
+1795594096.512 11026 14294 15654 D AedexDebug: handle=hm-eejQevISvxtYyiFCeTRQ1SmXGIxOuO9wyWMIA-rvzN_h3HUObzW2__7hWm39VN4C7u7y65DSU-R1-5PBH99OBb2ShFJH9fA395WemauUdaGyC stage=slices count=64 output=760x10000
+1795594096.714 11026 14294 17938 E RenderInspector: CheckFrameDropped failed, wrong FrameInfo.
+1795594096.715 11026 14294 17938 E BLASTBufferQueue: [VRI[ReaderActivity]#79](f:1,a:4) acquireNextBufferLocked: Can't acquire next buffer. Already acquired max frames 4 max:2 + 2
+1795594096.723 11026 14294 17938 E BLASTBufferQueue: [VRI[ReaderActivity]#79](f:1,a:4) acquireNextBufferLocked: Can't acquire next buffer. Already acquired max frames 4 max:2 + 2
+1795594096.729 11026 14294 17938 E BLASTBufferQueue: [VRI[ReaderActivity]#79](f:1,a:4) acquireNextBufferLocked: Can't acquire next buffer. Already acquired max frames 4 max:2 + 2
+1795594096.737 11026 14294 17938 E BLASTBufferQueue: [VRI[ReaderActivity]#79](f:1,a:4) acquireNextBufferLocked: Can't acquire next buffer. Already acquired max frames 4 max:2 + 2
+1795594096.743 11026 14294 17938 E BLASTBufferQueue: [VRI[ReaderActivity]#79](f:1,a:4) acquireNextBufferLocked: Can't acquire next buffer. Already acquired max frames 4 max:2 + 2
+1795594096.751 11026 14294 17938 E BLASTBufferQueue: [VRI[ReaderActivity]#79](f:1,a:4) acquireNextBufferLocked: Can't acquire next buffer. Already acquired max frames 4 max:2 + 2
+1795594096.758 11026 14294 17938 E BLASTBufferQueue: [VRI[ReaderActivity]#79](f:1,a:4) acquireNextBufferLocked: Can't acquire next buffer. Already acquired max frames 4 max:2 + 2
+1795594096.764 11026 14294 17938 E BLASTBufferQueue: [VRI[ReaderActivity]#79](f:1,a:4) acquireNextBufferLocked: Can't acquire next buffer. Already acquired max frames 4 max:2 + 2
+1795594096.773 11026 14294 17938 E BLASTBufferQueue: [VRI[ReaderActivity]#79](f:1,a:4) acquireNextBufferLocked: Can't acquire next buffer. Already acquired max frames 4 max:2 + 2
+1795594096.778 11026 14294 17938 E BLASTBufferQueue: [VRI[ReaderActivity]#79](f:1,a:4) acquireNextBufferLocked: Can't acquire next buffer. Already acquired max frames 4 max:2 + 2
+1795594096.785 11026 14294 17938 E BLASTBufferQueue: [VRI[ReaderActivity]#79](f:1,a:4) acquireNextBufferLocked: Can't acquire next buffer. Already acquired max frames 4 max:2 + 2
+1795594096.792 11026 14294 17938 E BLASTBufferQueue: [VRI[ReaderActivity]#79](f:1,a:4) acquireNextBufferLocked: Can't acquire next buffer. Already acquired max frames 4 max:2 + 2
+1795594096.799 11026 14294 17938 E BLASTBufferQueue: [VRI[ReaderActivity]#79](f:1,a:4) acquireNextBufferLocked: Can't acquire next buffer. Already acquired max frames 4 max:2 + 2
+1795594096.805 11026 14294 17938 E BLASTBufferQueue: [VRI[ReaderActivity]#79](f:1,a:4) acquireNextBufferLocked: Can't acquire next buffer. Already acquired max frames 4 max:2 + 2
+1795594096.819 11026 14294 17938 E BLASTBufferQueue: [VRI[ReaderActivity]#79](f:1,a:4) acquireNextBufferLocked: Can't acquire next buffer. Already acquired max frames 4 max:2 + 2
+1795594096.835 11026 14294 17938 E BLASTBufferQueue: [VRI[ReaderActivity]#79](f:1,a:4) acquireNextBufferLocked: Can't acquire next buffer. Already acquired max frames 4 max:2 + 2
+1795594096.840 11026 14294 17938 E BLASTBufferQueue: [VRI[ReaderActivity]#79](f:1,a:4) acquireNextBufferLocked: Can't acquire next buffer. Already acquired max frames 4 max:2 + 2
+1795594096.848 11026 14294 17938 E BLASTBufferQueue: [VRI[ReaderActivity]#79](f:1,a:4) acquireNextBufferLocked: Can't acquire next buffer. Already acquired max frames 4 max:2 + 2
+1795594096.854 11026 14294 17938 E BLASTBufferQueue: [VRI[ReaderActivity]#79](f:1,a:4) acquireNextBufferLocked: Can't acquire next buffer. Already acquired max frames 4 max:2 + 2
+1795594096.861 11026 14294 17938 E BLASTBufferQueue: [VRI[ReaderActivity]#79](f:1,a:4) acquireNextBufferLocked: Can't acquire next buffer. Already acquired max frames 4 max:2 + 2
+1795594096.868 11026 14294 17938 E BLASTBufferQueue: [VRI[ReaderActivity]#79](f:1,a:4) acquireNextBufferLocked: Can't acquire next buffer. Already acquired max frames 4 max:2 + 2
+1795594096.888 11026 14294 17938 E BLASTBufferQueue: [VRI[ReaderActivity]#79](f:1,a:4) acquireNextBufferLocked: Can't acquire next buffer. Already acquired max frames 4 max:2 + 2
+1795594096.896 11026 14294 17938 E BLASTBufferQueue: [VRI[ReaderActivity]#79](f:1,a:4) acquireNextBufferLocked: Can't acquire next buffer. Already acquired max frames 4 max:2 + 2
+1795594096.902 11026 14294 17938 E BLASTBufferQueue: [VRI[ReaderActivity]#79](f:1,a:4) acquireNextBufferLocked: Can't acquire next buffer. Already acquired max frames 4 max:2 + 2
+1795594096.910 11026 14294 17938 E BLASTBufferQueue: [VRI[ReaderActivity]#79](f:1,a:4) acquireNextBufferLocked: Can't acquire next buffer. Already acquired max frames 4 max:2 + 2
+1795594096.916 11026 14294 17938 E BLASTBufferQueue: [VRI[ReaderActivity]#79](f:1,a:4) acquireNextBufferLocked: Can't acquire next buffer. Already acquired max frames 4 max:2 + 2
+1795594096.923 11026 14294 17938 E BLASTBufferQueue: [VRI[ReaderActivity]#79](f:1,a:4) acquireNextBufferLocked: Can't acquire next buffer. Already acquired max frames 4 max:2 + 2
+1795594096.936 11026 14294 17938 E BLASTBufferQueue: [VRI[ReaderActivity]#79](f:1,a:4) acquireNextBufferLocked: Can't acquire next buffer. Already acquired max frames 4 max:2 + 2
+1795594096.944 11026 14294 17938 E BLASTBufferQueue: [VRI[ReaderActivity]#79](f:1,a:4) acquireNextBufferLocked: Can't acquire next buffer. Already acquired max frames 4 max:2 + 2
+1795594096.951 11026 14294 17938 E BLASTBufferQueue: [VRI[ReaderActivity]#79](f:1,a:4) acquireNextBufferLocked: Can't acquire next buffer. Already acquired max frames 4 max:2 + 2
+1795594096.958 11026 14294 17938 E BLASTBufferQueue: [VRI[ReaderActivity]#79](f:1,a:4) acquireNextBufferLocked: Can't acquire next buffer. Already acquired max frames 4 max:2 + 2
+1795594096.964 11026 14294 17938 E BLASTBufferQueue: [VRI[ReaderActivity]#79](f:1,a:4) acquireNextBufferLocked: Can't acquire next buffer. Already acquired max frames 4 max:2 + 2
+1795594096.972 11026 14294 17938 E BLASTBufferQueue: [VRI[ReaderActivity]#79](f:1,a:4) acquireNextBufferLocked: Can't acquire next buffer. Already acquired max frames 4 max:2 + 2
+1795594096.979 11026 14294 17938 E BLASTBufferQueue: [VRI[ReaderActivity]#79](f:1,a:4) acquireNextBufferLocked: Can't acquire next buffer. Already acquired max frames 4 max:2 + 2
+1795594096.986 11026 14294 17938 E BLASTBufferQueue: [VRI[ReaderActivity]#79](f:1,a:4) acquireNextBufferLocked: Can't acquire next buffer. Already acquired max frames 4 max:2 + 2
+1795594096.993 11026 14294 17938 E BLASTBufferQueue: [VRI[ReaderActivity]#79](f:1,a:4) acquireNextBufferLocked: Can't acquire next buffer. Already acquired max frames 4 max:2 + 2
+1795594097.008 11026 14294 15654 D AedexDebug: handle=kojTSZnYFFlc8boM8uNho8B3aopucGQ6QmYayZAofzYXZqMpnYCkoGc57xtCLK7L4ULxEhGdd5T6hmMc1lY1XGCOTvKxutM0zuHA3PjaYwQDLwam raw=1033505 trailerLength=23
+1795594097.008 11026 14294 15654 D AedexDebug: handle=kojTSZnYFFlc8boM8uNho8B3aopucGQ6QmYayZAofzYXZqMpnYCkoGc57xtCLK7L4ULxEhGdd5T6hmMc1lY1XGCOTvKxutM0zuHA3PjaYwQDLwam decodedMagic=AEDE5801 keyLength=16
+1795594097.008 11026 14294 15654 D AedexDebug: handle=kojTSZnYFFlc8boM8uNho8B3aopucGQ6QmYayZAofzYXZqMpnYCkoGc57xtCLK7L4ULxEhGdd5T6hmMc1lY1XGCOTvKxutM0zuHA3PjaYwQDLwam raw=1033505 trailer=true cleanLen=1033480 keyLength=16 xorKey=186 gutter=4
+1795594097.008 11026 14294 15654 D AedexDebug: PAGE_DATA handle=kojTSZnYFFlc8boM8uNho8B3aopucGQ6QmYayZAofzYXZqMpnYCkoGc57xtCLK7L4ULxEhGdd5T6hmMc1lY1XGCOTvKxutM0zuHA3PjaYwQDLwam url=https://blayvia.com/lector/p/kojTSZnYFFlc8boM8uNho8B3aopucGQ6QmYayZAofzYXZqMpnYCkoGc57xtCLK7L4ULxEhGdd5T6hmMc1lY1XGCOTvKxutM0zuHA3PjaYwQDLwam/?q=hq key=33396432376133323264363563323230
+1795594097.008 11026 14294 15654 D AedexDebug: handle=kojTSZnYFFlc8boM8uNho8B3aopucGQ6QmYayZAofzYXZqMpnYCkoGc57xtCLK7L4ULxEhGdd5T6hmMc1lY1XGCOTvKxutM0zuHA3PjaYwQDLwam stage=xorComplete xorKey=186 header=5249464600C50F00
+1795594097.012 11026 14294 17938 E BLASTBufferQueue: [VRI[ReaderActivity]#79](f:1,a:4) acquireNextBufferLocked: Can't acquire next buffer. Already acquired max frames 4 max:2 + 2
+1795594097.018 11026 14294 17938 E BLASTBufferQueue: [VRI[ReaderActivity]#79](f:1,a:4) acquireNextBufferLocked: Can't acquire next buffer. Already acquired max frames 4 max:2 + 2
+1795594097.048 11026 14294 15655 D AedexDebug: handle=cggmKL8W1hMYTZJY67dXLyPTBTIHYefKzRKMe_p70_kB_hasb1fUU4gNsLsei7zqoD9GfSLb15voIkmukCxIajJggEgQBlqA7pDNiwx3yOaQx_GR raw=966481 trailerLength=23
+1795594097.048 11026 14294 15655 D AedexDebug: handle=cggmKL8W1hMYTZJY67dXLyPTBTIHYefKzRKMe_p70_kB_hasb1fUU4gNsLsei7zqoD9GfSLb15voIkmukCxIajJggEgQBlqA7pDNiwx3yOaQx_GR decodedMagic=AEDE5801 keyLength=16
+1795594097.048 11026 14294 15655 D AedexDebug: handle=cggmKL8W1hMYTZJY67dXLyPTBTIHYefKzRKMe_p70_kB_hasb1fUU4gNsLsei7zqoD9GfSLb15voIkmukCxIajJggEgQBlqA7pDNiwx3yOaQx_GR raw=966481 trailer=true cleanLen=966456 keyLength=16 xorKey=186 gutter=4
+1795594097.048 11026 14294 15655 D AedexDebug: PAGE_DATA handle=cggmKL8W1hMYTZJY67dXLyPTBTIHYefKzRKMe_p70_kB_hasb1fUU4gNsLsei7zqoD9GfSLb15voIkmukCxIajJggEgQBlqA7pDNiwx3yOaQx_GR url=https://blayvia.com/lector/p/cggmKL8W1hMYTZJY67dXLyPTBTIHYefKzRKMe_p70_kB_hasb1fUU4gNsLsei7zqoD9GfSLb15voIkmukCxIajJggEgQBlqA7pDNiwx3yOaQx_GR/?q=hq key=35303934653431633733643534616664
+1795594097.049 11026 14294 15655 D AedexDebug: handle=cggmKL8W1hMYTZJY67dXLyPTBTIHYefKzRKMe_p70_kB_hasb1fUU4gNsLsei7zqoD9GfSLb15voIkmukCxIajJggEgQBlqA7pDNiwx3yOaQx_GR stage=xorComplete xorKey=186 header=5249464630BF0E00
+1795594097.101 11026 14294 15654 D AedexDebug: handle=kojTSZnYFFlc8boM8uNho8B3aopucGQ6QmYayZAofzYXZqMpnYCkoGc57xtCLK7L4ULxEhGdd5T6hmMc1lY1XGCOTvKxutM0zuHA3PjaYwQDLwam stage=bitmap width=824 height=10064 gutter=4
+1795594097.101 11026 14294 15654 D AedexDebug: handle=kojTSZnYFFlc8boM8uNho8B3aopucGQ6QmYayZAofzYXZqMpnYCkoGc57xtCLK7L4ULxEhGdd5T6hmMc1lY1XGCOTvKxutM0zuHA3PjaYwQDLwam stage=slices count=64 output=760x10000
+1795594097.116 11026 14294 14294 D SplineOverScroller: mFlingDuration: 2471,mFlingDistance: 4704.18603515625,mVelocity: 10164
+1795594097.116 11026 14294 14294 I ScrollIdentify: on fling
+1795594097.139 11026 14294 15655 D AedexDebug: handle=cggmKL8W1hMYTZJY67dXLyPTBTIHYefKzRKMe_p70_kB_hasb1fUU4gNsLsei7zqoD9GfSLb15voIkmukCxIajJggEgQBlqA7pDNiwx3yOaQx_GR stage=bitmap width=824 height=10064 gutter=4
+1795594097.140 11026 14294 15655 D AedexDebug: handle=cggmKL8W1hMYTZJY67dXLyPTBTIHYefKzRKMe_p70_kB_hasb1fUU4gNsLsei7zqoD9GfSLb15voIkmukCxIajJggEgQBlqA7pDNiwx3yOaQx_GR stage=slices count=64 output=760x10000
+1795594097.171 11026 14294 17938 E BLASTBufferQueue: [VRI[ReaderActivity]#79](f:1,a:4) acquireNextBufferLocked: Can't acquire next buffer. Already acquired max frames 4 max:2 + 2
+1795594097.177 11026 14294 17938 E BLASTBufferQueue: [VRI[ReaderActivity]#79](f:1,a:4) acquireNextBufferLocked: Can't acquire next buffer. Already acquired max frames 4 max:2 + 2
+1795594097.192 11026 14294 17938 E BLASTBufferQueue: [VRI[ReaderActivity]#79](f:1,a:4) acquireNextBufferLocked: Can't acquire next buffer. Already acquired max frames 4 max:2 + 2
+1795594097.207 11026 14294 14263 D AedexDebug: handle=dz6lchHMJUgz__vdV5r9MvXWrTdaVTkmqGoQkZ0jqG5CZlp0pS-EKLt0ER_bmzvZjcU8FAvjrA_fN9yXEweFzbmqJ9kxYaIhzHek32q18DAjmPUh raw=810239 trailerLength=23
+1795594097.207 11026 14294 14263 D AedexDebug: handle=dz6lchHMJUgz__vdV5r9MvXWrTdaVTkmqGoQkZ0jqG5CZlp0pS-EKLt0ER_bmzvZjcU8FAvjrA_fN9yXEweFzbmqJ9kxYaIhzHek32q18DAjmPUh decodedMagic=AEDE5801 keyLength=16
+1795594097.207 11026 14294 14263 D AedexDebug: handle=dz6lchHMJUgz__vdV5r9MvXWrTdaVTkmqGoQkZ0jqG5CZlp0pS-EKLt0ER_bmzvZjcU8FAvjrA_fN9yXEweFzbmqJ9kxYaIhzHek32q18DAjmPUh raw=810239 trailer=true cleanLen=810214 keyLength=16 xorKey=186 gutter=4
+1795594097.207 11026 14294 14263 D AedexDebug: PAGE_DATA handle=dz6lchHMJUgz__vdV5r9MvXWrTdaVTkmqGoQkZ0jqG5CZlp0pS-EKLt0ER_bmzvZjcU8FAvjrA_fN9yXEweFzbmqJ9kxYaIhzHek32q18DAjmPUh url=https://blayvia.com/lector/p/dz6lchHMJUgz__vdV5r9MvXWrTdaVTkmqGoQkZ0jqG5CZlp0pS-EKLt0ER_bmzvZjcU8FAvjrA_fN9yXEweFzbmqJ9kxYaIhzHek32q18DAjmPUh/?q=hq key=66376533663161616364396334626533
+1795594097.208 11026 14294 14263 D AedexDebug: handle=dz6lchHMJUgz__vdV5r9MvXWrTdaVTkmqGoQkZ0jqG5CZlp0pS-EKLt0ER_bmzvZjcU8FAvjrA_fN9yXEweFzbmqJ9kxYaIhzHek32q18DAjmPUh stage=xorComplete xorKey=186 header=52494646DE5C0C00
+1795594097.219 11026 14294 17938 E BLASTBufferQueue: [VRI[ReaderActivity]#79](f:1,a:4) acquireNextBufferLocked: Can't acquire next buffer. Already acquired max frames 4 max:2 + 2
+1795594097.233 11026 14294 17938 E BLASTBufferQueue: [VRI[ReaderActivity]#79](f:1,a:4) acquireNextBufferLocked: Can't acquire next buffer. Already acquired max frames 4 max:2 + 2
+1795594097.239 11026 14294 17938 E BLASTBufferQueue: [VRI[ReaderActivity]#79](f:1,a:4) acquireNextBufferLocked: Can't acquire next buffer. Already acquired max frames 4 max:2 + 2
+1795594097.242 11026 14294 15658 D AedexDebug: handle=Kh57RZpVL-tHZzDEI2zD430Yg3GxnBSwC78bOi2MqxedU-CbZN7f-vIRNVZ58GqwOdE0xXYpKsmnIN6UIse5t7ZIGxl4SH7BNhnXkNXyRXjfe9YQ raw=932629 trailerLength=23
+1795594097.243 11026 14294 15658 D AedexDebug: handle=Kh57RZpVL-tHZzDEI2zD430Yg3GxnBSwC78bOi2MqxedU-CbZN7f-vIRNVZ58GqwOdE0xXYpKsmnIN6UIse5t7ZIGxl4SH7BNhnXkNXyRXjfe9YQ decodedMagic=AEDE5801 keyLength=16
+1795594097.243 11026 14294 15658 D AedexDebug: handle=Kh57RZpVL-tHZzDEI2zD430Yg3GxnBSwC78bOi2MqxedU-CbZN7f-vIRNVZ58GqwOdE0xXYpKsmnIN6UIse5t7ZIGxl4SH7BNhnXkNXyRXjfe9YQ raw=932629 trailer=true cleanLen=932604 keyLength=16 xorKey=186 gutter=4
+1795594097.243 11026 14294 15658 D AedexDebug: PAGE_DATA handle=Kh57RZpVL-tHZzDEI2zD430Yg3GxnBSwC78bOi2MqxedU-CbZN7f-vIRNVZ58GqwOdE0xXYpKsmnIN6UIse5t7ZIGxl4SH7BNhnXkNXyRXjfe9YQ url=https://blayvia.com/lector/p/Kh57RZpVL-tHZzDEI2zD430Yg3GxnBSwC78bOi2MqxedU-CbZN7f-vIRNVZ58GqwOdE0xXYpKsmnIN6UIse5t7ZIGxl4SH7BNhnXkNXyRXjfe9YQ/?q=hq key=36613561663830663338383864643835
+1795594097.245 11026 14294 15658 D AedexDebug: handle=Kh57RZpVL-tHZzDEI2zD430Yg3GxnBSwC78bOi2MqxedU-CbZN7f-vIRNVZ58GqwOdE0xXYpKsmnIN6UIse5t7ZIGxl4SH7BNhnXkNXyRXjfe9YQ stage=xorComplete xorKey=186 header=52494646F43A0E00
+1795594097.246 11026 14294 17938 E BLASTBufferQueue: [VRI[ReaderActivity]#79](f:1,a:4) acquireNextBufferLocked: Can't acquire next buffer. Already acquired max frames 4 max:2 + 2
+1795594097.260 11026 14294 17938 E BLASTBufferQueue: [VRI[ReaderActivity]#79](f:1,a:4) acquireNextBufferLocked: Can't acquire next buffer. Already acquired max frames 4 max:2 + 2
+1795594097.267 11026 14294 17938 E BLASTBufferQueue: [VRI[ReaderActivity]#79](f:1,a:4) acquireNextBufferLocked: Can't acquire next buffer. Already acquired max frames 4 max:2 + 2
+1795594097.274 11026 14294 17938 E BLASTBufferQueue: [VRI[ReaderActivity]#79](f:1,a:4) acquireNextBufferLocked: Can't acquire next buffer. Already acquired max frames 4 max:2 + 2
+1795594097.281 11026 14294 17938 E BLASTBufferQueue: [VRI[ReaderActivity]#79](f:1,a:4) acquireNextBufferLocked: Can't acquire next buffer. Already acquired max frames 4 max:2 + 2
+1795594097.287 11026 14294 14263 D AedexDebug: handle=dz6lchHMJUgz__vdV5r9MvXWrTdaVTkmqGoQkZ0jqG5CZlp0pS-EKLt0ER_bmzvZjcU8FAvjrA_fN9yXEweFzbmqJ9kxYaIhzHek32q18DAjmPUh stage=bitmap width=824 height=10064 gutter=4
+1795594097.287 11026 14294 14263 D AedexDebug: handle=dz6lchHMJUgz__vdV5r9MvXWrTdaVTkmqGoQkZ0jqG5CZlp0pS-EKLt0ER_bmzvZjcU8FAvjrA_fN9yXEweFzbmqJ9kxYaIhzHek32q18DAjmPUh stage=slices count=64 output=760x10000
+1795594097.287 11026 14294 17938 E BLASTBufferQueue: [VRI[ReaderActivity]#79](f:1,a:4) acquireNextBufferLocked: Can't acquire next buffer. Already acquired max frames 4 max:2 + 2
+1795594097.294 11026 14294 17938 E BLASTBufferQueue: [VRI[ReaderActivity]#79](f:1,a:4) acquireNextBufferLocked: Can't acquire next buffer. Already acquired max frames 4 max:2 + 2
+1795594097.301 11026 14294 17938 E BLASTBufferQueue: [VRI[ReaderActivity]#79](f:1,a:4) acquireNextBufferLocked: Can't acquire next buffer. Already acquired max frames 4 max:2 + 2
+1795594097.308 11026 14294 17938 E BLASTBufferQueue: [VRI[ReaderActivity]#79](f:1,a:4) acquireNextBufferLocked: Can't acquire next buffer. Already acquired max frames 4 max:2 + 2
+1795594097.315 11026 14294 17938 E BLASTBufferQueue: [VRI[ReaderActivity]#79](f:1,a:4) acquireNextBufferLocked: Can't acquire next buffer. Already acquired max frames 4 max:2 + 2
+1795594097.322 11026 14294 17938 E BLASTBufferQueue: [VRI[ReaderActivity]#79](f:1,a:4) acquireNextBufferLocked: Can't acquire next buffer. Already acquired max frames 4 max:2 + 2
+1795594097.329 11026 14294 17938 E BLASTBufferQueue: [VRI[ReaderActivity]#79](f:1,a:4) acquireNextBufferLocked: Can't acquire next buffer. Already acquired max frames 4 max:2 + 2
+1795594097.333 11026 14294 15658 D AedexDebug: handle=Kh57RZpVL-tHZzDEI2zD430Yg3GxnBSwC78bOi2MqxedU-CbZN7f-vIRNVZ58GqwOdE0xXYpKsmnIN6UIse5t7ZIGxl4SH7BNhnXkNXyRXjfe9YQ stage=bitmap width=824 height=10064 gutter=4
+1795594097.333 11026 14294 15658 D AedexDebug: handle=Kh57RZpVL-tHZzDEI2zD430Yg3GxnBSwC78bOi2MqxedU-CbZN7f-vIRNVZ58GqwOdE0xXYpKsmnIN6UIse5t7ZIGxl4SH7BNhnXkNXyRXjfe9YQ stage=slices count=64 output=760x10000
+1795594097.336 11026 14294 17938 E BLASTBufferQueue: [VRI[ReaderActivity]#79](f:1,a:4) acquireNextBufferLocked: Can't acquire next buffer. Already acquired max frames 4 max:2 + 2
+1795594097.343 11026 14294 17938 E BLASTBufferQueue: [VRI[ReaderActivity]#79](f:1,a:4) acquireNextBufferLocked: Can't acquire next buffer. Already acquired max frames 4 max:2 + 2
+1795594097.350 11026 14294 17938 E BLASTBufferQueue: [VRI[ReaderActivity]#79](f:1,a:4) acquireNextBufferLocked: Can't acquire next buffer. Already acquired max frames 4 max:2 + 2
+1795594097.357 11026 14294 17938 E BLASTBufferQueue: [VRI[ReaderActivity]#79](f:1,a:4) acquireNextBufferLocked: Can't acquire next buffer. Already acquired max frames 4 max:2 + 2
+1795594097.364 11026 14294 17938 E BLASTBufferQueue: [VRI[ReaderActivity]#79](f:1,a:4) acquireNextBufferLocked: Can't acquire next buffer. Already acquired max frames 4 max:2 + 2
+1795594097.371 11026 14294 17938 E BLASTBufferQueue: [VRI[ReaderActivity]#79](f:1,a:4) acquireNextBufferLocked: Can't acquire next buffer. Already acquired max frames 4 max:2 + 2
+1795594097.378 11026 14294 17938 E BLASTBufferQueue: [VRI[ReaderActivity]#79](f:1,a:4) acquireNextBufferLocked: Can't acquire next buffer. Already acquired max frames 4 max:2 + 2
+1795594097.385 11026 14294 17938 E BLASTBufferQueue: [VRI[ReaderActivity]#79](f:1,a:4) acquireNextBufferLocked: Can't acquire next buffer. Already acquired max frames 4 max:2 + 2
+1795594097.391 11026 14294 17938 E BLASTBufferQueue: [VRI[ReaderActivity]#79](f:1,a:4) acquireNextBufferLocked: Can't acquire next buffer. Already acquired max frames 4 max:2 + 2
+1795594097.399 11026 14294 17938 E BLASTBufferQueue: [VRI[ReaderActivity]#79](f:1,a:4) acquireNextBufferLocked: Can't acquire next buffer. Already acquired max frames 4 max:2 + 2
+1795594097.406 11026 14294 17938 E BLASTBufferQueue: [VRI[ReaderActivity]#79](f:1,a:4) acquireNextBufferLocked: Can't acquire next buffer. Already acquired max frames 4 max:2 + 2
+1795594097.413 11026 14294 17938 E BLASTBufferQueue: [VRI[ReaderActivity]#79](f:1,a:4) acquireNextBufferLocked: Can't acquire next buffer. Already acquired max frames 4 max:2 + 2
+1795594097.425 11026 14294 17938 E BLASTBufferQueue: [VRI[ReaderActivity]#79](f:1,a:4) acquireNextBufferLocked: Can't acquire next buffer. Already acquired max frames 4 max:2 + 2
+1795594097.428 11026 14294 17938 E RenderInspector: CheckFrameDropped failed, wrong FrameInfo.
+1795594097.429 11026 14294 17938 E BLASTBufferQueue: [VRI[ReaderActivity]#79](f:1,a:4) acquireNextBufferLocked: Can't acquire next buffer. Already acquired max frames 4 max:2 + 2
+1795594097.441 11026 14294 17938 E BLASTBufferQueue: [VRI[ReaderActivity]#79](f:1,a:4) acquireNextBufferLocked: Can't acquire next buffer. Already acquired max frames 4 max:2 + 2
+1795594097.443 11026 14294 17938 E BLASTBufferQueue: [VRI[ReaderActivity]#79](f:1,a:4) acquireNextBufferLocked: Can't acquire next buffer. Already acquired max frames 4 max:2 + 2
+1795594097.449 11026 14294 17938 E BLASTBufferQueue: [VRI[ReaderActivity]#79](f:1,a:4) acquireNextBufferLocked: Can't acquire next buffer. Already acquired max frames 4 max:2 + 2
+1795594097.456 11026 14294 17938 E BLASTBufferQueue: [VRI[ReaderActivity]#79](f:1,a:4) acquireNextBufferLocked: Can't acquire next buffer. Already acquired max frames 4 max:2 + 2
+1795594097.464 11026 14294 17938 E BLASTBufferQueue: [VRI[ReaderActivity]#79](f:1,a:4) acquireNextBufferLocked: Can't acquire next buffer. Already acquired max frames 4 max:2 + 2
+1795594097.471 11026 14294 17938 E BLASTBufferQueue: [VRI[ReaderActivity]#79](f:1,a:4) acquireNextBufferLocked: Can't acquire next buffer. Already acquired max frames 4 max:2 + 2
+1795594097.477 11026 14294 17938 E BLASTBufferQueue: [VRI[ReaderActivity]#79](f:1,a:4) acquireNextBufferLocked: Can't acquire next buffer. Already acquired max frames 4 max:2 + 2
+1795594097.484 11026 14294 17938 E BLASTBufferQueue: [VRI[ReaderActivity]#79](f:1,a:4) acquireNextBufferLocked: Can't acquire next buffer. Already acquired max frames 4 max:2 + 2
+1795594097.492 11026 14294 17938 E BLASTBufferQueue: [VRI[ReaderActivity]#79](f:1,a:4) acquireNextBufferLocked: Can't acquire next buffer. Already acquired max frames 4 max:2 + 2
+1795594097.499 11026 14294 17938 E BLASTBufferQueue: [VRI[ReaderActivity]#79](f:1,a:4) acquireNextBufferLocked: Can't acquire next buffer. Already acquired max frames 4 max:2 + 2
+1795594097.506 11026 14294 17938 E BLASTBufferQueue: [VRI[ReaderActivity]#79](f:1,a:4) acquireNextBufferLocked: Can't acquire next buffer. Already acquired max frames 4 max:2 + 2
+1795594097.514 11026 14294 17938 E BLASTBufferQueue: [VRI[ReaderActivity]#79](f:1,a:4) acquireNextBufferLocked: Can't acquire next buffer. Already acquired max frames 4 max:2 + 2
+1795594097.520 11026 14294 17938 E BLASTBufferQueue: [VRI[ReaderActivity]#79](f:1,a:4) acquireNextBufferLocked: Can't acquire next buffer. Already acquired max frames 4 max:2 + 2
+1795594097.527 11026 14294 17938 E BLASTBufferQueue: [VRI[ReaderActivity]#79](f:1,a:4) acquireNextBufferLocked: Can't acquire next buffer. Already acquired max frames 4 max:2 + 2
+1795594097.533 11026 14294 17938 E BLASTBufferQueue: [VRI[ReaderActivity]#79](f:1,a:4) acquireNextBufferLocked: Can't acquire next buffer. Already acquired max frames 4 max:2 + 2
+1795594097.541 11026 14294 17938 E BLASTBufferQueue: [VRI[ReaderActivity]#79](f:1,a:4) acquireNextBufferLocked: Can't acquire next buffer. Already acquired max frames 4 max:2 + 2
+1795594097.548 11026 14294 17938 E BLASTBufferQueue: [VRI[ReaderActivity]#79](f:1,a:4) acquireNextBufferLocked: Can't acquire next buffer. Already acquired max frames 4 max:2 + 2
+1795594097.554 11026 14294 17938 E BLASTBufferQueue: [VRI[ReaderActivity]#79](f:1,a:4) acquireNextBufferLocked: Can't acquire next buffer. Already acquired max frames 4 max:2 + 2
+1795594097.563 11026 14294 17938 E BLASTBufferQueue: [VRI[ReaderActivity]#79](f:1,a:4) acquireNextBufferLocked: Can't acquire next buffer. Already acquired max frames 4 max:2 + 2
+1795594097.568 11026 14294 17938 E BLASTBufferQueue: [VRI[ReaderActivity]#79](f:1,a:4) acquireNextBufferLocked: Can't acquire next buffer. Already acquired max frames 4 max:2 + 2
+1795594097.575 11026 14294 17938 E BLASTBufferQueue: [VRI[ReaderActivity]#79](f:1,a:4) acquireNextBufferLocked: Can't acquire next buffer. Already acquired max frames 4 max:2 + 2
+1795594097.582 11026 14294 17938 E BLASTBufferQueue: [VRI[ReaderActivity]#79](f:1,a:4) acquireNextBufferLocked: Can't acquire next buffer. Already acquired max frames 4 max:2 + 2
+1795594097.589 11026 14294 17938 E BLASTBufferQueue: [VRI[ReaderActivity]#79](f:1,a:4) acquireNextBufferLocked: Can't acquire next buffer. Already acquired max frames 4 max:2 + 2
+1795594097.596 11026 14294 17938 E BLASTBufferQueue: [VRI[ReaderActivity]#79](f:1,a:4) acquireNextBufferLocked: Can't acquire next buffer. Already acquired max frames 4 max:2 + 2
+1795594097.603 11026 14294 17938 E BLASTBufferQueue: [VRI[ReaderActivity]#79](f:1,a:4) acquireNextBufferLocked: Can't acquire next buffer. Already acquired max frames 4 max:2 + 2
+1795594097.610 11026 14294 17938 E BLASTBufferQueue: [VRI[ReaderActivity]#79](f:1,a:4) acquireNextBufferLocked: Can't acquire next buffer. Already acquired max frames 4 max:2 + 2
+1795594097.617 11026 14294 17938 E BLASTBufferQueue: [VRI[ReaderActivity]#79](f:1,a:4) acquireNextBufferLocked: Can't acquire next buffer. Already acquired max frames 4 max:2 + 2
+1795594097.767 11026 14294 14294 D SplineOverScroller: mFlingDuration: 2256,mFlingDistance: 2951.627685546875,mVelocity: 6396
+1795594097.767 11026 14294 14294 I ScrollIdentify: on fling
+1795594097.843 11026 14294 17938 E BLASTBufferQueue: [VRI[ReaderActivity]#79](f:1,a:4) acquireNextBufferLocked: Can't acquire next buffer. Already acquired max frames 4 max:2 + 2
+1795594097.848 11026 14294 17938 E BLASTBufferQueue: [VRI[ReaderActivity]#79](f:1,a:4) acquireNextBufferLocked: Can't acquire next buffer. Already acquired max frames 4 max:2 + 2
+1795594097.855 11026 14294 17938 E BLASTBufferQueue: [VRI[ReaderActivity]#79](f:1,a:4) acquireNextBufferLocked: Can't acquire next buffer. Already acquired max frames 4 max:2 + 2
+1795594097.862 11026 14294 17938 E BLASTBufferQueue: [VRI[ReaderActivity]#79](f:1,a:4) acquireNextBufferLocked: Can't acquire next buffer. Already acquired max frames 4 max:2 + 2
+1795594097.870 11026 14294 17938 E BLASTBufferQueue: [VRI[ReaderActivity]#79](f:1,a:4) acquireNextBufferLocked: Can't acquire next buffer. Already acquired max frames 4 max:2 + 2
+1795594097.877 11026 14294 17938 E BLASTBufferQueue: [VRI[ReaderActivity]#79](f:1,a:4) acquireNextBufferLocked: Can't acquire next buffer. Already acquired max frames 4 max:2 + 2
+1795594097.883 11026 14294 17938 E BLASTBufferQueue: [VRI[ReaderActivity]#79](f:1,a:4) acquireNextBufferLocked: Can't acquire next buffer. Already acquired max frames 4 max:2 + 2
+1795594097.890 11026 14294 17938 E BLASTBufferQueue: [VRI[ReaderActivity]#79](f:1,a:4) acquireNextBufferLocked: Can't acquire next buffer. Already acquired max frames 4 max:2 + 2
+1795594097.897 11026 14294 17938 E BLASTBufferQueue: [VRI[ReaderActivity]#79](f:1,a:4) acquireNextBufferLocked: Can't acquire next buffer. Already acquired max frames 4 max:2 + 2
+1795594097.905 11026 14294 17938 E BLASTBufferQueue: [VRI[ReaderActivity]#79](f:1,a:4) acquireNextBufferLocked: Can't acquire next buffer. Already acquired max frames 4 max:2 + 2
+1795594097.918 11026 14294 17938 E BLASTBufferQueue: [VRI[ReaderActivity]#79](f:1,a:4) acquireNextBufferLocked: Can't acquire next buffer. Already acquired max frames 4 max:2 + 2
+1795594097.925 11026 14294 17938 E BLASTBufferQueue: [VRI[ReaderActivity]#79](f:1,a:4) acquireNextBufferLocked: Can't acquire next buffer. Already acquired max frames 4 max:2 + 2
+1795594097.932 11026 14294 17938 E BLASTBufferQueue: [VRI[ReaderActivity]#79](f:1,a:4) acquireNextBufferLocked: Can't acquire next buffer. Already acquired max frames 4 max:2 + 2
+1795594097.938 11026 14294 17938 E BLASTBufferQueue: [VRI[ReaderActivity]#79](f:1,a:4) acquireNextBufferLocked: Can't acquire next buffer. Already acquired max frames 4 max:2 + 2
+1795594097.945 11026 14294 17938 E BLASTBufferQueue: [VRI[ReaderActivity]#79](f:1,a:4) acquireNextBufferLocked: Can't acquire next buffer. Already acquired max frames 4 max:2 + 2
+1795594097.953 11026 14294 17938 E BLASTBufferQueue: [VRI[ReaderActivity]#79](f:1,a:4) acquireNextBufferLocked: Can't acquire next buffer. Already acquired max frames 4 max:2 + 2
+1795594097.959 11026 14294 17938 E BLASTBufferQueue: [VRI[ReaderActivity]#79](f:1,a:4) acquireNextBufferLocked: Can't acquire next buffer. Already acquired max frames 4 max:2 + 2
+1795594097.973 11026 14294 17938 E BLASTBufferQueue: [VRI[ReaderActivity]#79](f:1,a:4) acquireNextBufferLocked: Can't acquire next buffer. Already acquired max frames 4 max:2 + 2
+1795594097.978 11026 14294 17938 E BLASTBufferQueue: [VRI[ReaderActivity]#79](f:1,a:4) acquireNextBufferLocked: Can't acquire next buffer. Already acquired max frames 4 max:2 + 2
+1795594097.999 11026 14294 17938 E BLASTBufferQueue: [VRI[ReaderActivity]#79](f:1,a:4) acquireNextBufferLocked: Can't acquire next buffer. Already acquired max frames 4 max:2 + 2
+1795594098.015 11026 14294 17938 E BLASTBufferQueue: [VRI[ReaderActivity]#79](f:1,a:4) acquireNextBufferLocked: Can't acquire next buffer. Already acquired max frames 4 max:2 + 2
+1795594098.022 11026 14294 17938 E BLASTBufferQueue: [VRI[ReaderActivity]#79](f:1,a:4) acquireNextBufferLocked: Can't acquire next buffer. Already acquired max frames 4 max:2 + 2
+1795594098.029 11026 14294 17938 E BLASTBufferQueue: [VRI[ReaderActivity]#79](f:1,a:4) acquireNextBufferLocked: Can't acquire next buffer. Already acquired max frames 4 max:2 + 2
+1795594098.036 11026 14294 17938 E BLASTBufferQueue: [VRI[ReaderActivity]#79](f:1,a:4) acquireNextBufferLocked: Can't acquire next buffer. Already acquired max frames 4 max:2 + 2
+1795594098.042 11026 14294 17938 E BLASTBufferQueue: [VRI[ReaderActivity]#79](f:1,a:4) acquireNextBufferLocked: Can't acquire next buffer. Already acquired max frames 4 max:2 + 2
+1795594098.049 11026 14294 17938 E BLASTBufferQueue: [VRI[ReaderActivity]#79](f:1,a:4) acquireNextBufferLocked: Can't acquire next buffer. Already acquired max frames 4 max:2 + 2
+1795594098.056 11026 14294 17938 E BLASTBufferQueue: [VRI[ReaderActivity]#79](f:1,a:4) acquireNextBufferLocked: Can't acquire next buffer. Already acquired max frames 4 max:2 + 2
+1795594098.088 11026 14294 15659 D AedexDebug: handle=We1OHBTIzkhck74jYptRg74H0sW5UT_oZrUzk45YwFofkEsJ6KE1G4bJRuNnbj6yt_-fyXkmmeKfPFS7AwBJviF2lvptPlqZL0qI7ruZTMNJcxBJYg raw=1769963 trailerLength=23
+1795594098.089 11026 14294 15659 D AedexDebug: handle=We1OHBTIzkhck74jYptRg74H0sW5UT_oZrUzk45YwFofkEsJ6KE1G4bJRuNnbj6yt_-fyXkmmeKfPFS7AwBJviF2lvptPlqZL0qI7ruZTMNJcxBJYg decodedMagic=AEDE5801 keyLength=16
+1795594098.089 11026 14294 15659 D AedexDebug: handle=We1OHBTIzkhck74jYptRg74H0sW5UT_oZrUzk45YwFofkEsJ6KE1G4bJRuNnbj6yt_-fyXkmmeKfPFS7AwBJviF2lvptPlqZL0qI7ruZTMNJcxBJYg raw=1769963 trailer=true cleanLen=1769938 keyLength=16 xorKey=186 gutter=4
+1795594098.089 11026 14294 15659 D AedexDebug: PAGE_DATA handle=We1OHBTIzkhck74jYptRg74H0sW5UT_oZrUzk45YwFofkEsJ6KE1G4bJRuNnbj6yt_-fyXkmmeKfPFS7AwBJviF2lvptPlqZL0qI7ruZTMNJcxBJYg url=https://blayvia.com/lector/p/We1OHBTIzkhck74jYptRg74H0sW5UT_oZrUzk45YwFofkEsJ6KE1G4bJRuNnbj6yt_-fyXkmmeKfPFS7AwBJviF2lvptPlqZL0qI7ruZTMNJcxBJYg/?q=hq key=64343232623332343430613836636131
+1795594098.090 11026 14294 15659 D AedexDebug: handle=We1OHBTIzkhck74jYptRg74H0sW5UT_oZrUzk45YwFofkEsJ6KE1G4bJRuNnbj6yt_-fyXkmmeKfPFS7AwBJviF2lvptPlqZL0qI7ruZTMNJcxBJYg stage=xorComplete xorKey=186 header=52494646CA011B00
+1795594098.097 11026 14294 17938 E BLASTBufferQueue: [VRI[ReaderActivity]#79](f:1,a:4) acquireNextBufferLocked: Can't acquire next buffer. Already acquired max frames 4 max:2 + 2
+1795594098.103 11026 14294 17938 E BLASTBufferQueue: [VRI[ReaderActivity]#79](f:1,a:4) acquireNextBufferLocked: Can't acquire next buffer. Already acquired max frames 4 max:2 + 2
+1795594098.115 11026 14294 15654 D AedexDebug: handle=tFuE41xRR-gECtpTMKhPw09oE1XLPA2kvJlA27LZQgzG263H_7ThEFqu8IMHO_KsJX1nmIIYtjyvdsUeERzSQT-EPLv0E_PqJuLYUOE_xQdCyLning raw=1153319 trailerLength=23
+1795594098.115 11026 14294 15654 D AedexDebug: handle=tFuE41xRR-gECtpTMKhPw09oE1XLPA2kvJlA27LZQgzG263H_7ThEFqu8IMHO_KsJX1nmIIYtjyvdsUeERzSQT-EPLv0E_PqJuLYUOE_xQdCyLning decodedMagic=AEDE5801 keyLength=16
+1795594098.115 11026 14294 15654 D AedexDebug: handle=tFuE41xRR-gECtpTMKhPw09oE1XLPA2kvJlA27LZQgzG263H_7ThEFqu8IMHO_KsJX1nmIIYtjyvdsUeERzSQT-EPLv0E_PqJuLYUOE_xQdCyLning raw=1153319 trailer=true cleanLen=1153294 keyLength=16 xorKey=186 gutter=4
+1795594098.115 11026 14294 15654 D AedexDebug: PAGE_DATA handle=tFuE41xRR-gECtpTMKhPw09oE1XLPA2kvJlA27LZQgzG263H_7ThEFqu8IMHO_KsJX1nmIIYtjyvdsUeERzSQT-EPLv0E_PqJuLYUOE_xQdCyLning url=https://blayvia.com/lector/p/tFuE41xRR-gECtpTMKhPw09oE1XLPA2kvJlA27LZQgzG263H_7ThEFqu8IMHO_KsJX1nmIIYtjyvdsUeERzSQT-EPLv0E_PqJuLYUOE_xQdCyLning/?q=hq key=37336431663562363434653734383435
+1795594098.116 11026 14294 15654 D AedexDebug: handle=tFuE41xRR-gECtpTMKhPw09oE1XLPA2kvJlA27LZQgzG263H_7ThEFqu8IMHO_KsJX1nmIIYtjyvdsUeERzSQT-EPLv0E_PqJuLYUOE_xQdCyLning stage=xorComplete xorKey=186 header=5249464606991100
+1795594098.124 11026 14294 17938 E BLASTBufferQueue: [VRI[ReaderActivity]#79](f:1,a:4) acquireNextBufferLocked: Can't acquire next buffer. Already acquired max frames 4 max:2 + 2
+1795594098.130 11026 14294 15658 D AedexDebug: handle=IFAuNg8k1P4K5fvVBGudej-P5i9WHir-0DV-mF4pLp9ZYAyIJtbgAUa-cHOK_8ZU5vQ2FPxIVMRb5l0XX5LNpMBInXFb5NsMAvsWQwC6WKiuiueX raw=825203 trailerLength=23
+1795594098.130 11026 14294 15658 D AedexDebug: handle=IFAuNg8k1P4K5fvVBGudej-P5i9WHir-0DV-mF4pLp9ZYAyIJtbgAUa-cHOK_8ZU5vQ2FPxIVMRb5l0XX5LNpMBInXFb5NsMAvsWQwC6WKiuiueX decodedMagic=AEDE5801 keyLength=16
+1795594098.130 11026 14294 15658 D AedexDebug: handle=IFAuNg8k1P4K5fvVBGudej-P5i9WHir-0DV-mF4pLp9ZYAyIJtbgAUa-cHOK_8ZU5vQ2FPxIVMRb5l0XX5LNpMBInXFb5NsMAvsWQwC6WKiuiueX raw=825203 trailer=true cleanLen=825178 keyLength=16 xorKey=186 gutter=4
+1795594098.130 11026 14294 15658 D AedexDebug: PAGE_DATA handle=IFAuNg8k1P4K5fvVBGudej-P5i9WHir-0DV-mF4pLp9ZYAyIJtbgAUa-cHOK_8ZU5vQ2FPxIVMRb5l0XX5LNpMBInXFb5NsMAvsWQwC6WKiuiueX url=https://blayvia.com/lector/p/IFAuNg8k1P4K5fvVBGudej-P5i9WHir-0DV-mF4pLp9ZYAyIJtbgAUa-cHOK_8ZU5vQ2FPxIVMRb5l0XX5LNpMBInXFb5NsMAvsWQwC6WKiuiueX/?q=hq key=62363535393233653537663433623866
+1795594098.130 11026 14294 15658 D AedexDebug: handle=IFAuNg8k1P4K5fvVBGudej-P5i9WHir-0DV-mF4pLp9ZYAyIJtbgAUa-cHOK_8ZU5vQ2FPxIVMRb5l0XX5LNpMBInXFb5NsMAvsWQwC6WKiuiueX stage=xorComplete xorKey=186 header=5249464652970C00
+1795594098.210 11026 14294 15658 D AedexDebug: handle=IFAuNg8k1P4K5fvVBGudej-P5i9WHir-0DV-mF4pLp9ZYAyIJtbgAUa-cHOK_8ZU5vQ2FPxIVMRb5l0XX5LNpMBInXFb5NsMAvsWQwC6WKiuiueX stage=bitmap width=824 height=10064 gutter=4
+1795594098.211 11026 14294 15658 D AedexDebug: handle=IFAuNg8k1P4K5fvVBGudej-P5i9WHir-0DV-mF4pLp9ZYAyIJtbgAUa-cHOK_8ZU5vQ2FPxIVMRb5l0XX5LNpMBInXFb5NsMAvsWQwC6WKiuiueX stage=slices count=64 output=760x10000
+1795594098.216 11026 14294 14294 D SplineOverScroller: mFlingDuration: 2375,mFlingDistance: 3822.325439453125,mVelocity: 8268
+1795594098.216 11026 14294 14294 I ScrollIdentify: on fling
+1795594098.227 11026 14294 15659 D AedexDebug: handle=We1OHBTIzkhck74jYptRg74H0sW5UT_oZrUzk45YwFofkEsJ6KE1G4bJRuNnbj6yt_-fyXkmmeKfPFS7AwBJviF2lvptPlqZL0qI7ruZTMNJcxBJYg stage=bitmap width=824 height=10064 gutter=4
+1795594098.227 11026 14294 15659 D AedexDebug: handle=We1OHBTIzkhck74jYptRg74H0sW5UT_oZrUzk45YwFofkEsJ6KE1G4bJRuNnbj6yt_-fyXkmmeKfPFS7AwBJviF2lvptPlqZL0qI7ruZTMNJcxBJYg stage=slices count=64 output=760x10000
+1795594098.233 11026 14294 15654 D AedexDebug: handle=tFuE41xRR-gECtpTMKhPw09oE1XLPA2kvJlA27LZQgzG263H_7ThEFqu8IMHO_KsJX1nmIIYtjyvdsUeERzSQT-EPLv0E_PqJuLYUOE_xQdCyLning stage=bitmap width=824 height=10064 gutter=4
+1795594098.233 11026 14294 15654 D AedexDebug: handle=tFuE41xRR-gECtpTMKhPw09oE1XLPA2kvJlA27LZQgzG263H_7ThEFqu8IMHO_KsJX1nmIIYtjyvdsUeERzSQT-EPLv0E_PqJuLYUOE_xQdCyLning stage=slices count=64 output=760x10000
+1795594098.253 11026 14294 14263 D AedexDebug: handle=jxnn43zEMQN-PGfF-bNI1s0U5XTeSGzSM9udCWkDw5hJ9-b8VGDBOCBdqdyXqlXs-2EquvM9u7RUIDCwrKzAEwQAfS9wRR6vYrqQW0SkaNqscXe6 raw=1259545 trailerLength=23
+1795594098.253 11026 14294 14263 D AedexDebug: handle=jxnn43zEMQN-PGfF-bNI1s0U5XTeSGzSM9udCWkDw5hJ9-b8VGDBOCBdqdyXqlXs-2EquvM9u7RUIDCwrKzAEwQAfS9wRR6vYrqQW0SkaNqscXe6 decodedMagic=AEDE5801 keyLength=16
+1795594098.253 11026 14294 14263 D AedexDebug: handle=jxnn43zEMQN-PGfF-bNI1s0U5XTeSGzSM9udCWkDw5hJ9-b8VGDBOCBdqdyXqlXs-2EquvM9u7RUIDCwrKzAEwQAfS9wRR6vYrqQW0SkaNqscXe6 raw=1259545 trailer=true cleanLen=1259520 keyLength=16 xorKey=186 gutter=4
+1795594098.253 11026 14294 14263 D AedexDebug: PAGE_DATA handle=jxnn43zEMQN-PGfF-bNI1s0U5XTeSGzSM9udCWkDw5hJ9-b8VGDBOCBdqdyXqlXs-2EquvM9u7RUIDCwrKzAEwQAfS9wRR6vYrqQW0SkaNqscXe6 url=https://blayvia.com/lector/p/jxnn43zEMQN-PGfF-bNI1s0U5XTeSGzSM9udCWkDw5hJ9-b8VGDBOCBdqdyXqlXs-2EquvM9u7RUIDCwrKzAEwQAfS9wRR6vYrqQW0SkaNqscXe6/?q=hq key=39396634633736313666613332353638
+1795594098.254 11026 14294 14263 D AedexDebug: handle=jxnn43zEMQN-PGfF-bNI1s0U5XTeSGzSM9udCWkDw5hJ9-b8VGDBOCBdqdyXqlXs-2EquvM9u7RUIDCwrKzAEwQAfS9wRR6vYrqQW0SkaNqscXe6 stage=xorComplete xorKey=186 header=52494646F8371300
+1795594098.326 11026 14294 15655 D AedexDebug: handle=EPwy775B5vrUdMsLXODcSzNIfXbDC539LyfSvIMqa04mdIorxuWlutYc1mR3h5nbpyapeUrE7fiRpdtWkigsla9fFL5Ij8wXgDIo_GHRh-oCDMbM raw=1175141 trailerLength=23
+1795594098.327 11026 14294 15655 D AedexDebug: handle=EPwy775B5vrUdMsLXODcSzNIfXbDC539LyfSvIMqa04mdIorxuWlutYc1mR3h5nbpyapeUrE7fiRpdtWkigsla9fFL5Ij8wXgDIo_GHRh-oCDMbM decodedMagic=AEDE5801 keyLength=16
+1795594098.327 11026 14294 15655 D AedexDebug: handle=EPwy775B5vrUdMsLXODcSzNIfXbDC539LyfSvIMqa04mdIorxuWlutYc1mR3h5nbpyapeUrE7fiRpdtWkigsla9fFL5Ij8wXgDIo_GHRh-oCDMbM raw=1175141 trailer=true cleanLen=1175116 keyLength=16 xorKey=186 gutter=4
+1795594098.328 11026 14294 15655 D AedexDebug: PAGE_DATA handle=EPwy775B5vrUdMsLXODcSzNIfXbDC539LyfSvIMqa04mdIorxuWlutYc1mR3h5nbpyapeUrE7fiRpdtWkigsla9fFL5Ij8wXgDIo_GHRh-oCDMbM url=https://blayvia.com/lector/p/EPwy775B5vrUdMsLXODcSzNIfXbDC539LyfSvIMqa04mdIorxuWlutYc1mR3h5nbpyapeUrE7fiRpdtWkigsla9fFL5Ij8wXgDIo_GHRh-oCDMbM/?q=hq key=66613138353633626263376330646338
+1795594098.331 11026 14294 15655 D AedexDebug: handle=EPwy775B5vrUdMsLXODcSzNIfXbDC539LyfSvIMqa04mdIorxuWlutYc1mR3h5nbpyapeUrE7fiRpdtWkigsla9fFL5Ij8wXgDIo_GHRh-oCDMbM stage=xorComplete xorKey=186 header=5249464644EE1100
+1795594098.338 11026 14294 17938 E BLASTBufferQueue: [VRI[ReaderActivity]#79](f:1,a:4) acquireNextBufferLocked: Can't acquire next buffer. Already acquired max frames 4 max:2 + 2
+1795594098.351 11026 14294 17938 E BLASTBufferQueue: [VRI[ReaderActivity]#79](f:1,a:4) acquireNextBufferLocked: Can't acquire next buffer. Already acquired max frames 4 max:2 + 2
+1795594098.358 11026 14294 17938 E BLASTBufferQueue: [VRI[ReaderActivity]#79](f:1,a:4) acquireNextBufferLocked: Can't acquire next buffer. Already acquired max frames 4 max:2 + 2
+1795594098.365 11026 14294 17938 E BLASTBufferQueue: [VRI[ReaderActivity]#79](f:1,a:4) acquireNextBufferLocked: Can't acquire next buffer. Already acquired max frames 4 max:2 + 2
+1795594098.368 11026 14294 14263 D AedexDebug: handle=jxnn43zEMQN-PGfF-bNI1s0U5XTeSGzSM9udCWkDw5hJ9-b8VGDBOCBdqdyXqlXs-2EquvM9u7RUIDCwrKzAEwQAfS9wRR6vYrqQW0SkaNqscXe6 stage=bitmap width=824 height=10064 gutter=4
+1795594098.368 11026 14294 14263 D AedexDebug: handle=jxnn43zEMQN-PGfF-bNI1s0U5XTeSGzSM9udCWkDw5hJ9-b8VGDBOCBdqdyXqlXs-2EquvM9u7RUIDCwrKzAEwQAfS9wRR6vYrqQW0SkaNqscXe6 stage=slices count=64 output=760x10000
+1795594098.372 11026 14294 17938 E BLASTBufferQueue: [VRI[ReaderActivity]#79](f:1,a:4) acquireNextBufferLocked: Can't acquire next buffer. Already acquired max frames 4 max:2 + 2
+1795594098.379 11026 14294 17938 E BLASTBufferQueue: [VRI[ReaderActivity]#79](f:1,a:4) acquireNextBufferLocked: Can't acquire next buffer. Already acquired max frames 4 max:2 + 2
+1795594098.386 11026 14294 17938 E BLASTBufferQueue: [VRI[ReaderActivity]#79](f:1,a:4) acquireNextBufferLocked: Can't acquire next buffer. Already acquired max frames 4 max:2 + 2
+1795594098.393 11026 14294 17938 E BLASTBufferQueue: [VRI[ReaderActivity]#79](f:1,a:4) acquireNextBufferLocked: Can't acquire next buffer. Already acquired max frames 4 max:2 + 2
+1795594098.399 11026 14294 17938 E BLASTBufferQueue: [VRI[ReaderActivity]#79](f:1,a:4) acquireNextBufferLocked: Can't acquire next buffer. Already acquired max frames 4 max:2 + 2
+1795594098.407 11026 14294 17938 E BLASTBufferQueue: [VRI[ReaderActivity]#79](f:1,a:4) acquireNextBufferLocked: Can't acquire next buffer. Already acquired max frames 4 max:2 + 2
+1795594098.413 11026 14294 17938 E BLASTBufferQueue: [VRI[ReaderActivity]#79](f:1,a:4) acquireNextBufferLocked: Can't acquire next buffer. Already acquired max frames 4 max:2 + 2
+1795594098.420 11026 14294 17938 E BLASTBufferQueue: [VRI[ReaderActivity]#79](f:1,a:4) acquireNextBufferLocked: Can't acquire next buffer. Already acquired max frames 4 max:2 + 2
+1795594098.428 11026 14294 17938 E BLASTBufferQueue: [VRI[ReaderActivity]#79](f:1,a:4) acquireNextBufferLocked: Can't acquire next buffer. Already acquired max frames 4 max:2 + 2
+1795594098.434 11026 14294 17938 E BLASTBufferQueue: [VRI[ReaderActivity]#79](f:1,a:4) acquireNextBufferLocked: Can't acquire next buffer. Already acquired max frames 4 max:2 + 2
+1795594098.436 11026 14294 15655 D AedexDebug: handle=EPwy775B5vrUdMsLXODcSzNIfXbDC539LyfSvIMqa04mdIorxuWlutYc1mR3h5nbpyapeUrE7fiRpdtWkigsla9fFL5Ij8wXgDIo_GHRh-oCDMbM stage=bitmap width=824 height=10064 gutter=4
+1795594098.436 11026 14294 15655 D AedexDebug: handle=EPwy775B5vrUdMsLXODcSzNIfXbDC539LyfSvIMqa04mdIorxuWlutYc1mR3h5nbpyapeUrE7fiRpdtWkigsla9fFL5Ij8wXgDIo_GHRh-oCDMbM stage=slices count=64 output=760x10000
+1795594098.441 11026 14294 17938 E BLASTBufferQueue: [VRI[ReaderActivity]#79](f:1,a:4) acquireNextBufferLocked: Can't acquire next buffer. Already acquired max frames 4 max:2 + 2
+1795594098.448 11026 14294 17938 E BLASTBufferQueue: [VRI[ReaderActivity]#79](f:1,a:4) acquireNextBufferLocked: Can't acquire next buffer. Already acquired max frames 4 max:2 + 2
+1795594098.455 11026 14294 17938 E BLASTBufferQueue: [VRI[ReaderActivity]#79](f:1,a:4) acquireNextBufferLocked: Can't acquire next buffer. Already acquired max frames 4 max:2 + 2
+1795594098.462 11026 14294 17938 E BLASTBufferQueue: [VRI[ReaderActivity]#79](f:1,a:4) acquireNextBufferLocked: Can't acquire next buffer. Already acquired max frames 4 max:2 + 2
+1795594098.469 11026 14294 17938 E BLASTBufferQueue: [VRI[ReaderActivity]#79](f:1,a:4) acquireNextBufferLocked: Can't acquire next buffer. Already acquired max frames 4 max:2 + 2
+1795594098.476 11026 14294 17938 E BLASTBufferQueue: [VRI[ReaderActivity]#79](f:1,a:4) acquireNextBufferLocked: Can't acquire next buffer. Already acquired max frames 4 max:2 + 2
+1795594098.484 11026 14294 17938 E BLASTBufferQueue: [VRI[ReaderActivity]#79](f:1,a:4) acquireNextBufferLocked: Can't acquire next buffer. Already acquired max frames 4 max:2 + 2
+1795594098.490 11026 14294 17938 E BLASTBufferQueue: [VRI[ReaderActivity]#79](f:1,a:4) acquireNextBufferLocked: Can't acquire next buffer. Already acquired max frames 4 max:2 + 2
+1795594098.504 11026 14294 17938 E BLASTBufferQueue: [VRI[ReaderActivity]#79](f:1,a:4) acquireNextBufferLocked: Can't acquire next buffer. Already acquired max frames 4 max:2 + 2
+1795594098.511 11026 14294 17938 E BLASTBufferQueue: [VRI[ReaderActivity]#79](f:1,a:4) acquireNextBufferLocked: Can't acquire next buffer. Already acquired max frames 4 max:2 + 2
+1795594098.518 11026 14294 17938 E BLASTBufferQueue: [VRI[ReaderActivity]#79](f:1,a:4) acquireNextBufferLocked: Can't acquire next buffer. Already acquired max frames 4 max:2 + 2
+1795594098.525 11026 14294 17938 E BLASTBufferQueue: [VRI[ReaderActivity]#79](f:1,a:4) acquireNextBufferLocked: Can't acquire next buffer. Already acquired max frames 4 max:2 + 2
+1795594098.533 11026 14294 17938 E BLASTBufferQueue: [VRI[ReaderActivity]#79](f:1,a:4) acquireNextBufferLocked: Can't acquire next buffer. Already acquired max frames 4 max:2 + 2
+1795594098.539 11026 14294 17938 E BLASTBufferQueue: [VRI[ReaderActivity]#79](f:1,a:4) acquireNextBufferLocked: Can't acquire next buffer. Already acquired max frames 4 max:2 + 2
+1795594098.546 11026 14294 17938 E BLASTBufferQueue: [VRI[ReaderActivity]#79](f:1,a:4) acquireNextBufferLocked: Can't acquire next buffer. Already acquired max frames 4 max:2 + 2
+1795594098.551 11026 14294 17938 E BLASTBufferQueue: [VRI[ReaderActivity]#79](f:1,a:4) acquireNextBufferLocked: Can't acquire next buffer. Already acquired max frames 4 max:2 + 2
+1795594098.559 11026 14294 17938 E BLASTBufferQueue: [VRI[ReaderActivity]#79](f:1,a:4) acquireNextBufferLocked: Can't acquire next buffer. Already acquired max frames 4 max:2 + 2
+1795594098.567 11026 14294 17938 E BLASTBufferQueue: [VRI[ReaderActivity]#79](f:1,a:4) acquireNextBufferLocked: Can't acquire next buffer. Already acquired max frames 4 max:2 + 2
+1795594098.574 11026 14294 17938 E BLASTBufferQueue: [VRI[ReaderActivity]#79](f:1,a:4) acquireNextBufferLocked: Can't acquire next buffer. Already acquired max frames 4 max:2 + 2
+1795594098.581 11026 14294 17938 E BLASTBufferQueue: [VRI[ReaderActivity]#79](f:1,a:4) acquireNextBufferLocked: Can't acquire next buffer. Already acquired max frames 4 max:2 + 2
+1795594098.588 11026 14294 17938 E BLASTBufferQueue: [VRI[ReaderActivity]#79](f:1,a:4) acquireNextBufferLocked: Can't acquire next buffer. Already acquired max frames 4 max:2 + 2
+1795594098.595 11026 14294 17938 E BLASTBufferQueue: [VRI[ReaderActivity]#79](f:1,a:4) acquireNextBufferLocked: Can't acquire next buffer. Already acquired max frames 4 max:2 + 2
+1795594098.602 11026 14294 17938 E BLASTBufferQueue: [VRI[ReaderActivity]#79](f:1,a:4) acquireNextBufferLocked: Can't acquire next buffer. Already acquired max frames 4 max:2 + 2
+1795594098.609 11026 14294 17938 E BLASTBufferQueue: [VRI[ReaderActivity]#79](f:1,a:4) acquireNextBufferLocked: Can't acquire next buffer. Already acquired max frames 4 max:2 + 2
+1795594098.616 11026 14294 17938 E BLASTBufferQueue: [VRI[ReaderActivity]#79](f:1,a:4) acquireNextBufferLocked: Can't acquire next buffer. Already acquired max frames 4 max:2 + 2
+1795594098.623 11026 14294 17938 E BLASTBufferQueue: [VRI[ReaderActivity]#79](f:1,a:4) acquireNextBufferLocked: Can't acquire next buffer. Already acquired max frames 4 max:2 + 2
+1795594098.629 11026 14294 17938 E BLASTBufferQueue: [VRI[ReaderActivity]#79](f:1,a:4) acquireNextBufferLocked: Can't acquire next buffer. Already acquired max frames 4 max:2 + 2
+1795594098.636 11026 14294 17938 E BLASTBufferQueue: [VRI[ReaderActivity]#79](f:1,a:4) acquireNextBufferLocked: Can't acquire next buffer. Already acquired max frames 4 max:2 + 2
+1795594098.652 11026 14294 17938 E BLASTBufferQueue: [VRI[ReaderActivity]#79](f:1,a:4) acquireNextBufferLocked: Can't acquire next buffer. Already acquired max frames 4 max:2 + 2
+1795594098.737 11026 14294 14294 D SplineOverScroller: mFlingDuration: 2552,mFlingDistance: 5595.8134765625,mVelocity: 12081
+1795594098.737 11026 14294 14294 I ScrollIdentify: on fling
+1795594098.900 11026 14294 14263 D AedexDebug: handle=pVJSkhGPetLIR-CfxvC7QKM0kisKxhCPWjGDCZA1Vcv29jIVsU181bQvTCi7Eh8lTvsRAA3adcumfBq6pfJsdN9t5pu1nj6GreqrcvHfV14pOhQ_dw raw=1019531 trailerLength=23
+1795594098.900 11026 14294 14263 D AedexDebug: handle=pVJSkhGPetLIR-CfxvC7QKM0kisKxhCPWjGDCZA1Vcv29jIVsU181bQvTCi7Eh8lTvsRAA3adcumfBq6pfJsdN9t5pu1nj6GreqrcvHfV14pOhQ_dw decodedMagic=AEDE5801 keyLength=16
+1795594098.900 11026 14294 14263 D AedexDebug: handle=pVJSkhGPetLIR-CfxvC7QKM0kisKxhCPWjGDCZA1Vcv29jIVsU181bQvTCi7Eh8lTvsRAA3adcumfBq6pfJsdN9t5pu1nj6GreqrcvHfV14pOhQ_dw raw=1019531 trailer=true cleanLen=1019506 keyLength=16 xorKey=186 gutter=4
+1795594098.900 11026 14294 14263 D AedexDebug: PAGE_DATA handle=pVJSkhGPetLIR-CfxvC7QKM0kisKxhCPWjGDCZA1Vcv29jIVsU181bQvTCi7Eh8lTvsRAA3adcumfBq6pfJsdN9t5pu1nj6GreqrcvHfV14pOhQ_dw url=https://blayvia.com/lector/p/pVJSkhGPetLIR-CfxvC7QKM0kisKxhCPWjGDCZA1Vcv29jIVsU181bQvTCi7Eh8lTvsRAA3adcumfBq6pfJsdN9t5pu1nj6GreqrcvHfV14pOhQ_dw/?q=hq key=65336632313734643064643061383231
+1795594098.900 11026 14294 14263 D AedexDebug: handle=pVJSkhGPetLIR-CfxvC7QKM0kisKxhCPWjGDCZA1Vcv29jIVsU181bQvTCi7Eh8lTvsRAA3adcumfBq6pfJsdN9t5pu1nj6GreqrcvHfV14pOhQ_dw stage=xorComplete xorKey=186 header=524946466A8E0F00
+1795594098.967 11026 14294 15654 D AedexDebug: handle=IP2Comz40ST_lO3OkbPGsCEjSBHG3WhD6dJ6azD9OF08lN-NE7pGvC8Uf0F0dyPirWb20ePsxo5YrT1C7gjfz4Grr5MQwNlHkgz-a5_ipFkflUR6WQ raw=798397 trailerLength=23
+1795594098.967 11026 14294 15654 D AedexDebug: handle=IP2Comz40ST_lO3OkbPGsCEjSBHG3WhD6dJ6azD9OF08lN-NE7pGvC8Uf0F0dyPirWb20ePsxo5YrT1C7gjfz4Grr5MQwNlHkgz-a5_ipFkflUR6WQ decodedMagic=AEDE5801 keyLength=16
+1795594098.967 11026 14294 15654 D AedexDebug: handle=IP2Comz40ST_lO3OkbPGsCEjSBHG3WhD6dJ6azD9OF08lN-NE7pGvC8Uf0F0dyPirWb20ePsxo5YrT1C7gjfz4Grr5MQwNlHkgz-a5_ipFkflUR6WQ raw=798397 trailer=true cleanLen=798372 keyLength=16 xorKey=186 gutter=4
+1795594098.967 11026 14294 15654 D AedexDebug: PAGE_DATA handle=IP2Comz40ST_lO3OkbPGsCEjSBHG3WhD6dJ6azD9OF08lN-NE7pGvC8Uf0F0dyPirWb20ePsxo5YrT1C7gjfz4Grr5MQwNlHkgz-a5_ipFkflUR6WQ url=https://blayvia.com/lector/p/IP2Comz40ST_lO3OkbPGsCEjSBHG3WhD6dJ6azD9OF08lN-NE7pGvC8Uf0F0dyPirWb20ePsxo5YrT1C7gjfz4Grr5MQwNlHkgz-a5_ipFkflUR6WQ/?q=hq key=61643437633066383830393862333438
+1795594098.968 11026 14294 15654 D AedexDebug: handle=IP2Comz40ST_lO3OkbPGsCEjSBHG3WhD6dJ6azD9OF08lN-NE7pGvC8Uf0F0dyPirWb20ePsxo5YrT1C7gjfz4Grr5MQwNlHkgz-a5_ipFkflUR6WQ stage=xorComplete xorKey=186 header=524946469C2E0C00
+1795594098.993 11026 14294 14263 D AedexDebug: handle=pVJSkhGPetLIR-CfxvC7QKM0kisKxhCPWjGDCZA1Vcv29jIVsU181bQvTCi7Eh8lTvsRAA3adcumfBq6pfJsdN9t5pu1nj6GreqrcvHfV14pOhQ_dw stage=bitmap width=824 height=10064 gutter=4
+1795594098.993 11026 14294 14263 D AedexDebug: handle=pVJSkhGPetLIR-CfxvC7QKM0kisKxhCPWjGDCZA1Vcv29jIVsU181bQvTCi7Eh8lTvsRAA3adcumfBq6pfJsdN9t5pu1nj6GreqrcvHfV14pOhQ_dw stage=slices count=64 output=760x10000
+1795594099.052 11026 14294 15654 D AedexDebug: handle=IP2Comz40ST_lO3OkbPGsCEjSBHG3WhD6dJ6azD9OF08lN-NE7pGvC8Uf0F0dyPirWb20ePsxo5YrT1C7gjfz4Grr5MQwNlHkgz-a5_ipFkflUR6WQ stage=bitmap width=824 height=10064 gutter=4
+1795594099.052 11026 14294 15654 D AedexDebug: handle=IP2Comz40ST_lO3OkbPGsCEjSBHG3WhD6dJ6azD9OF08lN-NE7pGvC8Uf0F0dyPirWb20ePsxo5YrT1C7gjfz4Grr5MQwNlHkgz-a5_ipFkflUR6WQ stage=slices count=64 output=760x10000
+1795594099.057 11026 14294 15659 D AedexDebug: handle=y8Mb1-TRYHO6R7H_f2g08mcNdPubZQp3B9aMhtYVzV3siqedRo6y2YUrTuHvfUmQ1J6Iv5bsvXS_R4kKhPwDmANeGzZppDXLy_1FZ4YfrPPWKUtJYw raw=853065 trailerLength=23
+1795594099.057 11026 14294 15659 D AedexDebug: handle=y8Mb1-TRYHO6R7H_f2g08mcNdPubZQp3B9aMhtYVzV3siqedRo6y2YUrTuHvfUmQ1J6Iv5bsvXS_R4kKhPwDmANeGzZppDXLy_1FZ4YfrPPWKUtJYw decodedMagic=AEDE5801 keyLength=16
+1795594099.057 11026 14294 15659 D AedexDebug: handle=y8Mb1-TRYHO6R7H_f2g08mcNdPubZQp3B9aMhtYVzV3siqedRo6y2YUrTuHvfUmQ1J6Iv5bsvXS_R4kKhPwDmANeGzZppDXLy_1FZ4YfrPPWKUtJYw raw=853065 trailer=true cleanLen=853040 keyLength=16 xorKey=186 gutter=4
+1795594099.057 11026 14294 15659 D AedexDebug: PAGE_DATA handle=y8Mb1-TRYHO6R7H_f2g08mcNdPubZQp3B9aMhtYVzV3siqedRo6y2YUrTuHvfUmQ1J6Iv5bsvXS_R4kKhPwDmANeGzZppDXLy_1FZ4YfrPPWKUtJYw url=https://blayvia.com/lector/p/y8Mb1-TRYHO6R7H_f2g08mcNdPubZQp3B9aMhtYVzV3siqedRo6y2YUrTuHvfUmQ1J6Iv5bsvXS_R4kKhPwDmANeGzZppDXLy_1FZ4YfrPPWKUtJYw/?q=hq key=61346132383537383237396338386539
+1795594099.058 11026 14294 15659 D AedexDebug: handle=y8Mb1-TRYHO6R7H_f2g08mcNdPubZQp3B9aMhtYVzV3siqedRo6y2YUrTuHvfUmQ1J6Iv5bsvXS_R4kKhPwDmANeGzZppDXLy_1FZ4YfrPPWKUtJYw stage=xorComplete xorKey=186 header=5249464628040D00
+1795594099.142 11026 14294 15659 D AedexDebug: handle=y8Mb1-TRYHO6R7H_f2g08mcNdPubZQp3B9aMhtYVzV3siqedRo6y2YUrTuHvfUmQ1J6Iv5bsvXS_R4kKhPwDmANeGzZppDXLy_1FZ4YfrPPWKUtJYw stage=bitmap width=824 height=10064 gutter=4
+1795594099.142 11026 14294 15659 D AedexDebug: handle=y8Mb1-TRYHO6R7H_f2g08mcNdPubZQp3B9aMhtYVzV3siqedRo6y2YUrTuHvfUmQ1J6Iv5bsvXS_R4kKhPwDmANeGzZppDXLy_1FZ4YfrPPWKUtJYw stage=slices count=64 output=760x10000
+1795594099.170 11026 14294 15655 D AedexDebug: handle=9ky6symZk9D25GP0FSEgmcqJ1dnF3p6pCVdbt-wnENOsA9lDDx6QPxBTOLyJfD7CAu0TcCoT9n7aC_Yzgc29Rg93dd_8brPHJS11Jua_zgE9X0vIhg raw=971211 trailerLength=23
+1795594099.170 11026 14294 15655 D AedexDebug: handle=9ky6symZk9D25GP0FSEgmcqJ1dnF3p6pCVdbt-wnENOsA9lDDx6QPxBTOLyJfD7CAu0TcCoT9n7aC_Yzgc29Rg93dd_8brPHJS11Jua_zgE9X0vIhg decodedMagic=AEDE5801 keyLength=16
+1795594099.170 11026 14294 15655 D AedexDebug: handle=9ky6symZk9D25GP0FSEgmcqJ1dnF3p6pCVdbt-wnENOsA9lDDx6QPxBTOLyJfD7CAu0TcCoT9n7aC_Yzgc29Rg93dd_8brPHJS11Jua_zgE9X0vIhg raw=971211 trailer=true cleanLen=971186 keyLength=16 xorKey=186 gutter=4
+1795594099.170 11026 14294 15655 D AedexDebug: PAGE_DATA handle=9ky6symZk9D25GP0FSEgmcqJ1dnF3p6pCVdbt-wnENOsA9lDDx6QPxBTOLyJfD7CAu0TcCoT9n7aC_Yzgc29Rg93dd_8brPHJS11Jua_zgE9X0vIhg url=https://blayvia.com/lector/p/9ky6symZk9D25GP0FSEgmcqJ1dnF3p6pCVdbt-wnENOsA9lDDx6QPxBTOLyJfD7CAu0TcCoT9n7aC_Yzgc29Rg93dd_8brPHJS11Jua_zgE9X0vIhg/?q=hq key=33356434373863386230353437373065
+1795594099.171 11026 14294 15655 D AedexDebug: handle=9ky6symZk9D25GP0FSEgmcqJ1dnF3p6pCVdbt-wnENOsA9lDDx6QPxBTOLyJfD7CAu0TcCoT9n7aC_Yzgc29Rg93dd_8brPHJS11Jua_zgE9X0vIhg stage=xorComplete xorKey=186 header=52494646AAD10E00
+1795594099.246 11026 14294 15658 D AedexDebug: handle=BlM8p5NhG8j1_G2vwzBAeYdtLTwxDefdmQSP9wQJAXmOxIy5EFfaSvxSAdaHHzFs8y_9ooD-ms3DUhhDyoNcjWV0sei0rn2mZVqPLyEJHDwDyrcgaA raw=819791 trailerLength=23
+1795594099.246 11026 14294 15658 D AedexDebug: handle=BlM8p5NhG8j1_G2vwzBAeYdtLTwxDefdmQSP9wQJAXmOxIy5EFfaSvxSAdaHHzFs8y_9ooD-ms3DUhhDyoNcjWV0sei0rn2mZVqPLyEJHDwDyrcgaA decodedMagic=AEDE5801 keyLength=16
+1795594099.246 11026 14294 15658 D AedexDebug: handle=BlM8p5NhG8j1_G2vwzBAeYdtLTwxDefdmQSP9wQJAXmOxIy5EFfaSvxSAdaHHzFs8y_9ooD-ms3DUhhDyoNcjWV0sei0rn2mZVqPLyEJHDwDyrcgaA raw=819791 trailer=true cleanLen=819766 keyLength=16 xorKey=186 gutter=4
+1795594099.246 11026 14294 15658 D AedexDebug: PAGE_DATA handle=BlM8p5NhG8j1_G2vwzBAeYdtLTwxDefdmQSP9wQJAXmOxIy5EFfaSvxSAdaHHzFs8y_9ooD-ms3DUhhDyoNcjWV0sei0rn2mZVqPLyEJHDwDyrcgaA url=https://blayvia.com/lector/p/BlM8p5NhG8j1_G2vwzBAeYdtLTwxDefdmQSP9wQJAXmOxIy5EFfaSvxSAdaHHzFs8y_9ooD-ms3DUhhDyoNcjWV0sei0rn2mZVqPLyEJHDwDyrcgaA/?q=hq key=36313730623835663163633934636539
+1795594099.246 11026 14294 15658 D AedexDebug: handle=BlM8p5NhG8j1_G2vwzBAeYdtLTwxDefdmQSP9wQJAXmOxIy5EFfaSvxSAdaHHzFs8y_9ooD-ms3DUhhDyoNcjWV0sei0rn2mZVqPLyEJHDwDyrcgaA stage=xorComplete xorKey=186 header=524946462E820C00
+1795594099.267 11026 14294 15655 D AedexDebug: handle=9ky6symZk9D25GP0FSEgmcqJ1dnF3p6pCVdbt-wnENOsA9lDDx6QPxBTOLyJfD7CAu0TcCoT9n7aC_Yzgc29Rg93dd_8brPHJS11Jua_zgE9X0vIhg stage=bitmap width=824 height=10064 gutter=4
+1795594099.267 11026 14294 15655 D AedexDebug: handle=9ky6symZk9D25GP0FSEgmcqJ1dnF3p6pCVdbt-wnENOsA9lDDx6QPxBTOLyJfD7CAu0TcCoT9n7aC_Yzgc29Rg93dd_8brPHJS11Jua_zgE9X0vIhg stage=slices count=64 output=760x10000
+1795594099.322 11026 14294 15658 D AedexDebug: handle=BlM8p5NhG8j1_G2vwzBAeYdtLTwxDefdmQSP9wQJAXmOxIy5EFfaSvxSAdaHHzFs8y_9ooD-ms3DUhhDyoNcjWV0sei0rn2mZVqPLyEJHDwDyrcgaA stage=bitmap width=824 height=10064 gutter=4
+1795594099.322 11026 14294 15658 D AedexDebug: handle=BlM8p5NhG8j1_G2vwzBAeYdtLTwxDefdmQSP9wQJAXmOxIy5EFfaSvxSAdaHHzFs8y_9ooD-ms3DUhhDyoNcjWV0sei0rn2mZVqPLyEJHDwDyrcgaA stage=slices count=64 output=760x10000
+1795594099.618 11026 14294 14294 D SplineOverScroller: mFlingDuration: 2371,mFlingDistance: 3786.511474609375,mVelocity: 8191
+1795594099.618 11026 14294 14294 I ScrollIdentify: on fling
+1795594099.842 11026 14294 15658 D AedexDebug: handle=A1E8Ql78bB4FyGXtfXfqFs14unAamkRizbdl4XXgxXFEIr34ffTGm-98v9WrLeQaf7dg5vJWJqC_Hr_GM8qHSQ-Z8DO1lnn-PorFr6NJCJxAg_wroA raw=575545 trailerLength=23
+1795594099.842 11026 14294 15658 D AedexDebug: handle=A1E8Ql78bB4FyGXtfXfqFs14unAamkRizbdl4XXgxXFEIr34ffTGm-98v9WrLeQaf7dg5vJWJqC_Hr_GM8qHSQ-Z8DO1lnn-PorFr6NJCJxAg_wroA decodedMagic=AEDE5801 keyLength=16
+1795594099.842 11026 14294 15658 D AedexDebug: handle=A1E8Ql78bB4FyGXtfXfqFs14unAamkRizbdl4XXgxXFEIr34ffTGm-98v9WrLeQaf7dg5vJWJqC_Hr_GM8qHSQ-Z8DO1lnn-PorFr6NJCJxAg_wroA raw=575545 trailer=true cleanLen=575520 keyLength=16 xorKey=186 gutter=4
+1795594099.842 11026 14294 15658 D AedexDebug: PAGE_DATA handle=A1E8Ql78bB4FyGXtfXfqFs14unAamkRizbdl4XXgxXFEIr34ffTGm-98v9WrLeQaf7dg5vJWJqC_Hr_GM8qHSQ-Z8DO1lnn-PorFr6NJCJxAg_wroA url=https://blayvia.com/lector/p/A1E8Ql78bB4FyGXtfXfqFs14unAamkRizbdl4XXgxXFEIr34ffTGm-98v9WrLeQaf7dg5vJWJqC_Hr_GM8qHSQ-Z8DO1lnn-PorFr6NJCJxAg_wroA/?q=hq key=37343864323563353039313333633335
+1795594099.843 11026 14294 15658 D AedexDebug: handle=A1E8Ql78bB4FyGXtfXfqFs14unAamkRizbdl4XXgxXFEIr34ffTGm-98v9WrLeQaf7dg5vJWJqC_Hr_GM8qHSQ-Z8DO1lnn-PorFr6NJCJxAg_wroA stage=xorComplete xorKey=186 header=5249464618C80800
+1795594099.900 11026 14294 15658 D AedexDebug: handle=A1E8Ql78bB4FyGXtfXfqFs14unAamkRizbdl4XXgxXFEIr34ffTGm-98v9WrLeQaf7dg5vJWJqC_Hr_GM8qHSQ-Z8DO1lnn-PorFr6NJCJxAg_wroA stage=bitmap width=824 height=3843 gutter=4
+1795594099.900 11026 14294 15658 D AedexDebug: handle=A1E8Ql78bB4FyGXtfXfqFs14unAamkRizbdl4XXgxXFEIr34ffTGm-98v9WrLeQaf7dg5vJWJqC_Hr_GM8qHSQ-Z8DO1lnn-PorFr6NJCJxAg_wroA stage=slices count=64 output=760x3779
+1795594099.978 11026 14294 15659 D AedexDebug: handle=pcKv4ZaIGJ5NdgRp9zHPQlEbTLhjUykIr1MK4sQCmXKAazLLPeBgWn-5RifSonMVhkx8F-fI1kcA8hFigzwui09y_HnvV00cH8tXq_J4Vb85XTvwkA raw=837889 trailerLength=23
+1795594099.979 11026 14294 15659 D AedexDebug: handle=pcKv4ZaIGJ5NdgRp9zHPQlEbTLhjUykIr1MK4sQCmXKAazLLPeBgWn-5RifSonMVhkx8F-fI1kcA8hFigzwui09y_HnvV00cH8tXq_J4Vb85XTvwkA decodedMagic=AEDE5801 keyLength=16
+1795594099.979 11026 14294 15659 D AedexDebug: handle=pcKv4ZaIGJ5NdgRp9zHPQlEbTLhjUykIr1MK4sQCmXKAazLLPeBgWn-5RifSonMVhkx8F-fI1kcA8hFigzwui09y_HnvV00cH8tXq_J4Vb85XTvwkA raw=837889 trailer=true cleanLen=837864 keyLength=16 xorKey=186 gutter=4
+1795594099.979 11026 14294 15659 D AedexDebug: PAGE_DATA handle=pcKv4ZaIGJ5NdgRp9zHPQlEbTLhjUykIr1MK4sQCmXKAazLLPeBgWn-5RifSonMVhkx8F-fI1kcA8hFigzwui09y_HnvV00cH8tXq_J4Vb85XTvwkA url=https://blayvia.com/lector/p/pcKv4ZaIGJ5NdgRp9zHPQlEbTLhjUykIr1MK4sQCmXKAazLLPeBgWn-5RifSonMVhkx8F-fI1kcA8hFigzwui09y_HnvV00cH8tXq_J4Vb85XTvwkA/?q=hq key=61343938333562646632643664396439
+1795594099.980 11026 14294 15659 D AedexDebug: handle=pcKv4ZaIGJ5NdgRp9zHPQlEbTLhjUykIr1MK4sQCmXKAazLLPeBgWn-5RifSonMVhkx8F-fI1kcA8hFigzwui09y_HnvV00cH8tXq_J4Vb85XTvwkA stage=xorComplete xorKey=186 header=52494646E0C80C00
+1795594099.985 11026 14294 15655 D AedexDebug: handle=KGppf6BQ0YJbvMibD1y3JDkuYLsVWF7n82AuH9p8bJyxmWBF_7uoCohx-vpXSjCvGiyMWS6wUBUoxT-y5yM72Z-_YbsgQj-aNIA8sqGnoOZeIB-O-w raw=814457 trailerLength=23
+1795594099.986 11026 14294 15655 D AedexDebug: handle=KGppf6BQ0YJbvMibD1y3JDkuYLsVWF7n82AuH9p8bJyxmWBF_7uoCohx-vpXSjCvGiyMWS6wUBUoxT-y5yM72Z-_YbsgQj-aNIA8sqGnoOZeIB-O-w decodedMagic=AEDE5801 keyLength=16
+1795594099.986 11026 14294 15655 D AedexDebug: handle=KGppf6BQ0YJbvMibD1y3JDkuYLsVWF7n82AuH9p8bJyxmWBF_7uoCohx-vpXSjCvGiyMWS6wUBUoxT-y5yM72Z-_YbsgQj-aNIA8sqGnoOZeIB-O-w raw=814457 trailer=true cleanLen=814432 keyLength=16 xorKey=186 gutter=4
+1795594099.986 11026 14294 15655 D AedexDebug: PAGE_DATA handle=KGppf6BQ0YJbvMibD1y3JDkuYLsVWF7n82AuH9p8bJyxmWBF_7uoCohx-vpXSjCvGiyMWS6wUBUoxT-y5yM72Z-_YbsgQj-aNIA8sqGnoOZeIB-O-w url=https://blayvia.com/lector/p/KGppf6BQ0YJbvMibD1y3JDkuYLsVWF7n82AuH9p8bJyxmWBF_7uoCohx-vpXSjCvGiyMWS6wUBUoxT-y5yM72Z-_YbsgQj-aNIA8sqGnoOZeIB-O-w/?q=hq key=65366234303734666135346630613564
+1795594099.986 11026 14294 15655 D AedexDebug: handle=KGppf6BQ0YJbvMibD1y3JDkuYLsVWF7n82AuH9p8bJyxmWBF_7uoCohx-vpXSjCvGiyMWS6wUBUoxT-y5yM72Z-_YbsgQj-aNIA8sqGnoOZeIB-O-w stage=xorComplete xorKey=186 header=52494646586D0C00
+1795594100.019 11026 14294 15654 D AedexDebug: handle=BeiH5CqWqDP7ZYm3Op17Ks80wt5DSudSGU7gwT9QPfh-HE1ETQCj25XvfXYVOFzHLYKNG_CJTKhJFe6Mv8wZAD2wpzfN9LDpObUrZNB0G1mihe83BA raw=596817 trailerLength=23
+1795594100.019 11026 14294 15654 D AedexDebug: handle=BeiH5CqWqDP7ZYm3Op17Ks80wt5DSudSGU7gwT9QPfh-HE1ETQCj25XvfXYVOFzHLYKNG_CJTKhJFe6Mv8wZAD2wpzfN9LDpObUrZNB0G1mihe83BA decodedMagic=AEDE5801 keyLength=16
+1795594100.019 11026 14294 15654 D AedexDebug: handle=BeiH5CqWqDP7ZYm3Op17Ks80wt5DSudSGU7gwT9QPfh-HE1ETQCj25XvfXYVOFzHLYKNG_CJTKhJFe6Mv8wZAD2wpzfN9LDpObUrZNB0G1mihe83BA raw=596817 trailer=true cleanLen=596792 keyLength=16 xorKey=186 gutter=4
+1795594100.019 11026 14294 15654 D AedexDebug: PAGE_DATA handle=BeiH5CqWqDP7ZYm3Op17Ks80wt5DSudSGU7gwT9QPfh-HE1ETQCj25XvfXYVOFzHLYKNG_CJTKhJFe6Mv8wZAD2wpzfN9LDpObUrZNB0G1mihe83BA url=https://blayvia.com/lector/p/BeiH5CqWqDP7ZYm3Op17Ks80wt5DSudSGU7gwT9QPfh-HE1ETQCj25XvfXYVOFzHLYKNG_CJTKhJFe6Mv8wZAD2wpzfN9LDpObUrZNB0G1mihe83BA/?q=hq key=31643435663563306166663336313434
+1795594100.019 11026 14294 15654 D AedexDebug: handle=BeiH5CqWqDP7ZYm3Op17Ks80wt5DSudSGU7gwT9QPfh-HE1ETQCj25XvfXYVOFzHLYKNG_CJTKhJFe6Mv8wZAD2wpzfN9LDpObUrZNB0G1mihe83BA stage=xorComplete xorKey=186 header=52494646301B0900
+1795594100.068 11026 14294 15659 D AedexDebug: handle=pcKv4ZaIGJ5NdgRp9zHPQlEbTLhjUykIr1MK4sQCmXKAazLLPeBgWn-5RifSonMVhkx8F-fI1kcA8hFigzwui09y_HnvV00cH8tXq_J4Vb85XTvwkA stage=bitmap width=824 height=10064 gutter=4
+1795594100.068 11026 14294 15659 D AedexDebug: handle=pcKv4ZaIGJ5NdgRp9zHPQlEbTLhjUykIr1MK4sQCmXKAazLLPeBgWn-5RifSonMVhkx8F-fI1kcA8hFigzwui09y_HnvV00cH8tXq_J4Vb85XTvwkA stage=slices count=64 output=760x10000
+1795594100.072 11026 14294 15655 D AedexDebug: handle=KGppf6BQ0YJbvMibD1y3JDkuYLsVWF7n82AuH9p8bJyxmWBF_7uoCohx-vpXSjCvGiyMWS6wUBUoxT-y5yM72Z-_YbsgQj-aNIA8sqGnoOZeIB-O-w stage=bitmap width=824 height=10064 gutter=4
+1795594100.072 11026 14294 15655 D AedexDebug: handle=KGppf6BQ0YJbvMibD1y3JDkuYLsVWF7n82AuH9p8bJyxmWBF_7uoCohx-vpXSjCvGiyMWS6wUBUoxT-y5yM72Z-_YbsgQj-aNIA8sqGnoOZeIB-O-w stage=slices count=64 output=760x10000
+1795594100.088 11026 14294 15654 D AedexDebug: handle=BeiH5CqWqDP7ZYm3Op17Ks80wt5DSudSGU7gwT9QPfh-HE1ETQCj25XvfXYVOFzHLYKNG_CJTKhJFe6Mv8wZAD2wpzfN9LDpObUrZNB0G1mihe83BA stage=bitmap width=824 height=10064 gutter=4
+1795594100.088 11026 14294 15654 D AedexDebug: handle=BeiH5CqWqDP7ZYm3Op17Ks80wt5DSudSGU7gwT9QPfh-HE1ETQCj25XvfXYVOFzHLYKNG_CJTKhJFe6Mv8wZAD2wpzfN9LDpObUrZNB0G1mihe83BA stage=slices count=64 output=760x10000
+1795594100.380 11026 14294 14294 D SplineOverScroller: mFlingDuration: 2425,mFlingDistance: 4257.67431640625,mVelocity: 9204
+1795594100.380 11026 14294 14294 I ScrollIdentify: on fling
+1795594100.402 11026 14294 17938 E BLASTBufferQueue: [VRI[ReaderActivity]#79](f:1,a:4) acquireNextBufferLocked: Can't acquire next buffer. Already acquired max frames 4 max:2 + 2
+1795594100.417 11026 14294 17938 E BLASTBufferQueue: [VRI[ReaderActivity]#79](f:1,a:4) acquireNextBufferLocked: Can't acquire next buffer. Already acquired max frames 4 max:2 + 2
+1795594100.426 11026 14294 17938 E BLASTBufferQueue: [VRI[ReaderActivity]#79](f:1,a:4) acquireNextBufferLocked: Can't acquire next buffer. Already acquired max frames 4 max:2 + 2
+1795594100.432 11026 14294 17938 E BLASTBufferQueue: [VRI[ReaderActivity]#79](f:1,a:4) acquireNextBufferLocked: Can't acquire next buffer. Already acquired max frames 4 max:2 + 2
+1795594100.439 11026 14294 17938 E BLASTBufferQueue: [VRI[ReaderActivity]#79](f:1,a:4) acquireNextBufferLocked: Can't acquire next buffer. Already acquired max frames 4 max:2 + 2
+1795594100.451 11026 14294 17938 E BLASTBufferQueue: [VRI[ReaderActivity]#79](f:1,a:4) acquireNextBufferLocked: Can't acquire next buffer. Already acquired max frames 4 max:2 + 2
+1795594100.460 11026 14294 17938 E BLASTBufferQueue: [VRI[ReaderActivity]#79](f:1,a:4) acquireNextBufferLocked: Can't acquire next buffer. Already acquired max frames 4 max:2 + 2
+1795594100.466 11026 14294 17938 E BLASTBufferQueue: [VRI[ReaderActivity]#79](f:1,a:4) acquireNextBufferLocked: Can't acquire next buffer. Already acquired max frames 4 max:2 + 2
+1795594100.473 11026 14294 17938 E BLASTBufferQueue: [VRI[ReaderActivity]#79](f:1,a:4) acquireNextBufferLocked: Can't acquire next buffer. Already acquired max frames 4 max:2 + 2
+1795594100.479 11026 14294 17938 E BLASTBufferQueue: [VRI[ReaderActivity]#79](f:1,a:4) acquireNextBufferLocked: Can't acquire next buffer. Already acquired max frames 4 max:2 + 2
+1795594100.487 11026 14294 17938 E BLASTBufferQueue: [VRI[ReaderActivity]#79](f:1,a:4) acquireNextBufferLocked: Can't acquire next buffer. Already acquired max frames 4 max:2 + 2
+1795594100.494 11026 14294 17938 E BLASTBufferQueue: [VRI[ReaderActivity]#79](f:1,a:4) acquireNextBufferLocked: Can't acquire next buffer. Already acquired max frames 4 max:2 + 2
+1795594100.500 11026 14294 17938 E BLASTBufferQueue: [VRI[ReaderActivity]#79](f:1,a:4) acquireNextBufferLocked: Can't acquire next buffer. Already acquired max frames 4 max:2 + 2
+1795594100.509 11026 14294 17938 E BLASTBufferQueue: [VRI[ReaderActivity]#79](f:1,a:4) acquireNextBufferLocked: Can't acquire next buffer. Already acquired max frames 4 max:2 + 2
+1795594100.515 11026 14294 17938 E BLASTBufferQueue: [VRI[ReaderActivity]#79](f:1,a:4) acquireNextBufferLocked: Can't acquire next buffer. Already acquired max frames 4 max:2 + 2
+1795594100.529 11026 14294 17938 E BLASTBufferQueue: [VRI[ReaderActivity]#79](f:1,a:4) acquireNextBufferLocked: Can't acquire next buffer. Already acquired max frames 4 max:2 + 2
+1795594100.536 11026 14294 17938 E BLASTBufferQueue: [VRI[ReaderActivity]#79](f:1,a:4) acquireNextBufferLocked: Can't acquire next buffer. Already acquired max frames 4 max:2 + 2
+1795594100.542 11026 14294 17938 E BLASTBufferQueue: [VRI[ReaderActivity]#79](f:1,a:4) acquireNextBufferLocked: Can't acquire next buffer. Already acquired max frames 4 max:2 + 2
+1795594100.549 11026 14294 17938 E BLASTBufferQueue: [VRI[ReaderActivity]#79](f:1,a:4) acquireNextBufferLocked: Can't acquire next buffer. Already acquired max frames 4 max:2 + 2
+1795594100.557 11026 14294 17938 E BLASTBufferQueue: [VRI[ReaderActivity]#79](f:1,a:4) acquireNextBufferLocked: Can't acquire next buffer. Already acquired max frames 4 max:2 + 2
+1795594100.564 11026 14294 17938 E BLASTBufferQueue: [VRI[ReaderActivity]#79](f:1,a:4) acquireNextBufferLocked: Can't acquire next buffer. Already acquired max frames 4 max:2 + 2
+1795594100.570 11026 14294 17938 E BLASTBufferQueue: [VRI[ReaderActivity]#79](f:1,a:4) acquireNextBufferLocked: Can't acquire next buffer. Already acquired max frames 4 max:2 + 2
+1795594100.577 11026 14294 17938 E BLASTBufferQueue: [VRI[ReaderActivity]#79](f:1,a:4) acquireNextBufferLocked: Can't acquire next buffer. Already acquired max frames 4 max:2 + 2
+1795594100.591 11026 14294 17938 E BLASTBufferQueue: [VRI[ReaderActivity]#79](f:1,a:4) acquireNextBufferLocked: Can't acquire next buffer. Already acquired max frames 4 max:2 + 2
+1795594100.598 11026 14294 17938 E BLASTBufferQueue: [VRI[ReaderActivity]#79](f:1,a:4) acquireNextBufferLocked: Can't acquire next buffer. Already acquired max frames 4 max:2 + 2
+1795594100.605 11026 14294 17938 E BLASTBufferQueue: [VRI[ReaderActivity]#79](f:1,a:4) acquireNextBufferLocked: Can't acquire next buffer. Already acquired max frames 4 max:2 + 2
+1795594100.612 11026 14294 17938 E BLASTBufferQueue: [VRI[ReaderActivity]#79](f:1,a:4) acquireNextBufferLocked: Can't acquire next buffer. Already acquired max frames 4 max:2 + 2
+1795594100.619 11026 14294 17938 E BLASTBufferQueue: [VRI[ReaderActivity]#79](f:1,a:4) acquireNextBufferLocked: Can't acquire next buffer. Already acquired max frames 4 max:2 + 2
+1795594100.626 11026 14294 17938 E BLASTBufferQueue: [VRI[ReaderActivity]#79](f:1,a:4) acquireNextBufferLocked: Can't acquire next buffer. Already acquired max frames 4 max:2 + 2
+1795594100.640 11026 14294 17938 E BLASTBufferQueue: [VRI[ReaderActivity]#79](f:1,a:4) acquireNextBufferLocked: Can't acquire next buffer. Already acquired max frames 4 max:2 + 2
+1795594100.653 11026 14294 17938 E BLASTBufferQueue: [VRI[ReaderActivity]#79](f:1,a:4) acquireNextBufferLocked: Can't acquire next buffer. Already acquired max frames 4 max:2 + 2
+1795594100.659 11026 14294 17938 E BLASTBufferQueue: [VRI[ReaderActivity]#79](f:1,a:4) acquireNextBufferLocked: Can't acquire next buffer. Already acquired max frames 4 max:2 + 2
+1795594100.666 11026 14294 17938 E BLASTBufferQueue: [VRI[ReaderActivity]#79](f:1,a:4) acquireNextBufferLocked: Can't acquire next buffer. Already acquired max frames 4 max:2 + 2
+1795594100.674 11026 14294 17938 E BLASTBufferQueue: [VRI[ReaderActivity]#79](f:1,a:4) acquireNextBufferLocked: Can't acquire next buffer. Already acquired max frames 4 max:2 + 2
+1795594100.681 11026 14294 17938 E BLASTBufferQueue: [VRI[ReaderActivity]#79](f:1,a:4) acquireNextBufferLocked: Can't acquire next buffer. Already acquired max frames 4 max:2 + 2
+1795594100.687 11026 14294 17938 E BLASTBufferQueue: [VRI[ReaderActivity]#79](f:1,a:4) acquireNextBufferLocked: Can't acquire next buffer. Already acquired max frames 4 max:2 + 2
+1795594100.695 11026 14294 17938 E BLASTBufferQueue: [VRI[ReaderActivity]#79](f:1,a:4) acquireNextBufferLocked: Can't acquire next buffer. Already acquired max frames 4 max:2 + 2
+1795594100.701 11026 14294 17938 E BLASTBufferQueue: [VRI[ReaderActivity]#79](f:1,a:4) acquireNextBufferLocked: Can't acquire next buffer. Already acquired max frames 4 max:2 + 2
+1795594100.708 11026 14294 17938 E BLASTBufferQueue: [VRI[ReaderActivity]#79](f:1,a:4) acquireNextBufferLocked: Can't acquire next buffer. Already acquired max frames 4 max:2 + 2
+1795594100.715 11026 14294 17938 E BLASTBufferQueue: [VRI[ReaderActivity]#79](f:1,a:4) acquireNextBufferLocked: Can't acquire next buffer. Already acquired max frames 4 max:2 + 2
+1795594100.722 11026 14294 17938 E BLASTBufferQueue: [VRI[ReaderActivity]#79](f:1,a:4) acquireNextBufferLocked: Can't acquire next buffer. Already acquired max frames 4 max:2 + 2
+1795594100.729 11026 14294 17938 E BLASTBufferQueue: [VRI[ReaderActivity]#79](f:1,a:4) acquireNextBufferLocked: Can't acquire next buffer. Already acquired max frames 4 max:2 + 2
+1795594100.750 11026 14294 17938 E BLASTBufferQueue: [VRI[ReaderActivity]#79](f:1,a:4) acquireNextBufferLocked: Can't acquire next buffer. Already acquired max frames 4 max:2 + 2
+1795594100.756 11026 14294 17938 E BLASTBufferQueue: [VRI[ReaderActivity]#79](f:1,a:4) acquireNextBufferLocked: Can't acquire next buffer. Already acquired max frames 4 max:2 + 2
+1795594100.762 11026 14294 17938 E BLASTBufferQueue: [VRI[ReaderActivity]#79](f:1,a:4) acquireNextBufferLocked: Can't acquire next buffer. Already acquired max frames 4 max:2 + 2
+1795594100.770 11026 14294 17938 E BLASTBufferQueue: [VRI[ReaderActivity]#79](f:1,a:4) acquireNextBufferLocked: Can't acquire next buffer. Already acquired max frames 4 max:2 + 2
+1795594100.777 11026 14294 17938 E BLASTBufferQueue: [VRI[ReaderActivity]#79](f:1,a:4) acquireNextBufferLocked: Can't acquire next buffer. Already acquired max frames 4 max:2 + 2
+1795594100.791 11026 14294 17938 E BLASTBufferQueue: [VRI[ReaderActivity]#79](f:1,a:4) acquireNextBufferLocked: Can't acquire next buffer. Already acquired max frames 4 max:2 + 2
+1795594101.078 11026 14294 14294 D SplineOverScroller: mFlingDuration: 2243,mFlingDistance: 2866.9765625,mVelocity: 6214
+1795594101.079 11026 14294 14294 I ScrollIdentify: on fling
+1795594101.644 11026 14294 14294 D SplineOverScroller: mFlingDuration: 1612,mFlingDistance: 721.3953247070312,mVelocity: 1601
+1795594101.644 11026 14294 14294 I ScrollIdentify: on fling
+1795594102.971 11026 14294 17938 W RenderInspector: QueueBuffer time out on app.taihoo/eu.kanade.tachiyomi.ui.reader.ReaderActivity, count=1, avg=7 ms, max=7 ms.
+1795594104.421 11026 14294 14294 D FirebaseSessions: App backgrounded on app.taihoo
+1795594104.437 11026 14294 17938 D BLASTBufferQueue: [VRI[ReaderActivity]#79](f:0,a:1) destructor()
+1795594104.438 11026 14294 17938 D BufferQueueConsumer: [VRI[ReaderActivity]#79(BLAST Consumer)79](id:37d60000004f,api:0,p:-1,c:14294) disconnect
+1795594105.666 11026 14294 15654 D AedexDebug: handle=JdsiFuqJvpG7t7yOK-vfV9hcLpTxCnimwvLIOVqrVQ4qvZKtnTTS01mUXQO5SnD3ICgrzGMIyAyCB3ruOnHSgHYzK9qcye3p1yqJF23KJGYnMZpN raw=555357 trailerLength=23
+1795594105.667 11026 14294 15654 D AedexDebug: handle=JdsiFuqJvpG7t7yOK-vfV9hcLpTxCnimwvLIOVqrVQ4qvZKtnTTS01mUXQO5SnD3ICgrzGMIyAyCB3ruOnHSgHYzK9qcye3p1yqJF23KJGYnMZpN decodedMagic=AEDE5801 keyLength=16
+1795594105.667 11026 14294 15654 D AedexDebug: handle=JdsiFuqJvpG7t7yOK-vfV9hcLpTxCnimwvLIOVqrVQ4qvZKtnTTS01mUXQO5SnD3ICgrzGMIyAyCB3ruOnHSgHYzK9qcye3p1yqJF23KJGYnMZpN raw=555357 trailer=true cleanLen=555332 keyLength=16 xorKey=186 gutter=4
+1795594105.667 11026 14294 15654 D AedexDebug: PAGE_DATA handle=JdsiFuqJvpG7t7yOK-vfV9hcLpTxCnimwvLIOVqrVQ4qvZKtnTTS01mUXQO5SnD3ICgrzGMIyAyCB3ruOnHSgHYzK9qcye3p1yqJF23KJGYnMZpN url=https://blayvia.com/lector/p/JdsiFuqJvpG7t7yOK-vfV9hcLpTxCnimwvLIOVqrVQ4qvZKtnTTS01mUXQO5SnD3ICgrzGMIyAyCB3ruOnHSgHYzK9qcye3p1yqJF23KJGYnMZpN/?q=hq key=34626564353631613134653938616239
+1795594105.669 11026 14294 15654 D AedexDebug: handle=JdsiFuqJvpG7t7yOK-vfV9hcLpTxCnimwvLIOVqrVQ4qvZKtnTTS01mUXQO5SnD3ICgrzGMIyAyCB3ruOnHSgHYzK9qcye3p1yqJF23KJGYnMZpN stage=xorComplete xorKey=186 header=524946463C790800
+1795594105.786 11026 14294 15654 D AedexDebug: handle=JdsiFuqJvpG7t7yOK-vfV9hcLpTxCnimwvLIOVqrVQ4qvZKtnTTS01mUXQO5SnD3ICgrzGMIyAyCB3ruOnHSgHYzK9qcye3p1yqJF23KJGYnMZpN stage=bitmap width=864 height=1564 gutter=4
+1795594105.786 11026 14294 15654 D AedexDebug: handle=JdsiFuqJvpG7t7yOK-vfV9hcLpTxCnimwvLIOVqrVQ4qvZKtnTTS01mUXQO5SnD3ICgrzGMIyAyCB3ruOnHSgHYzK9qcye3p1yqJF23KJGYnMZpN stage=slices count=64 output=800x1500
+1795594106.430 11026 14294 15389 I FA      : Application backgrounded at: timestamp_millis: 1795594104426
+1795594106.686 11026 14294 15655 D AedexDebug: handle=bRIpuVwgqfdkKpIgypZC4EVk3j8SnhO_RHuoxTEvn3fk4vr8BxmDInmG3NNQrzeK0ZMklKMOva7DEnETXUesr4cJ4Z38VdFIYDHf2Nufsm9HEumb raw=1697455 trailerLength=23
+1795594106.688 11026 14294 15655 D AedexDebug: handle=bRIpuVwgqfdkKpIgypZC4EVk3j8SnhO_RHuoxTEvn3fk4vr8BxmDInmG3NNQrzeK0ZMklKMOva7DEnETXUesr4cJ4Z38VdFIYDHf2Nufsm9HEumb decodedMagic=AEDE5801 keyLength=16
+1795594106.688 11026 14294 15655 D AedexDebug: handle=bRIpuVwgqfdkKpIgypZC4EVk3j8SnhO_RHuoxTEvn3fk4vr8BxmDInmG3NNQrzeK0ZMklKMOva7DEnETXUesr4cJ4Z38VdFIYDHf2Nufsm9HEumb raw=1697455 trailer=true cleanLen=1697430 keyLength=16 xorKey=186 gutter=4
+1795594106.689 11026 14294 15655 D AedexDebug: PAGE_DATA handle=bRIpuVwgqfdkKpIgypZC4EVk3j8SnhO_RHuoxTEvn3fk4vr8BxmDInmG3NNQrzeK0ZMklKMOva7DEnETXUesr4cJ4Z38VdFIYDHf2Nufsm9HEumb url=https://blayvia.com/lector/p/bRIpuVwgqfdkKpIgypZC4EVk3j8SnhO_RHuoxTEvn3fk4vr8BxmDInmG3NNQrzeK0ZMklKMOva7DEnETXUesr4cJ4Z38VdFIYDHf2Nufsm9HEumb/?q=hq key=31306365383131643939623835666535
+1795594106.693 11026 14294 15655 D AedexDebug: handle=bRIpuVwgqfdkKpIgypZC4EVk3j8SnhO_RHuoxTEvn3fk4vr8BxmDInmG3NNQrzeK0ZMklKMOva7DEnETXUesr4cJ4Z38VdFIYDHf2Nufsm9HEumb stage=xorComplete xorKey=186 header=524946468EE61900
+1795594107.160 11026 14294 15655 D AedexDebug: handle=bRIpuVwgqfdkKpIgypZC4EVk3j8SnhO_RHuoxTEvn3fk4vr8BxmDInmG3NNQrzeK0ZMklKMOva7DEnETXUesr4cJ4Z38VdFIYDHf2Nufsm9HEumb stage=bitmap width=824 height=10064 gutter=4
+1795594107.161 11026 14294 15655 D AedexDebug: handle=bRIpuVwgqfdkKpIgypZC4EVk3j8SnhO_RHuoxTEvn3fk4vr8BxmDInmG3NNQrzeK0ZMklKMOva7DEnETXUesr4cJ4Z38VdFIYDHf2Nufsm9HEumb stage=slices count=64 output=760x10000
+1795594107.522 11026 14294 17882 I app.taihoo: NativeAlloc concurrent mark compact GC freed 28MB AllocSpace bytes, 44(17MB) LOS objects, 75% free, 31MB/124MB, paused 1.604ms,9.068ms total 360.861ms
+1795594108.584 11026 14294 15655 D AedexDebug: handle=x7Xl5WhTVkeNA_SSr2W62L2tof_ZuH-AQj-R40kCGnsQeRpg63vJwVeOg8GwhlouNQkw1Iev3_xLmh-Jv8mpXdJEmK7DBsUnwuhXJFNJhPqqabGT raw=1469239 trailerLength=23
+1795594108.584 11026 14294 15655 D AedexDebug: handle=x7Xl5WhTVkeNA_SSr2W62L2tof_ZuH-AQj-R40kCGnsQeRpg63vJwVeOg8GwhlouNQkw1Iev3_xLmh-Jv8mpXdJEmK7DBsUnwuhXJFNJhPqqabGT decodedMagic=AEDE5801 keyLength=16
+1795594108.585 11026 14294 15655 D AedexDebug: handle=x7Xl5WhTVkeNA_SSr2W62L2tof_ZuH-AQj-R40kCGnsQeRpg63vJwVeOg8GwhlouNQkw1Iev3_xLmh-Jv8mpXdJEmK7DBsUnwuhXJFNJhPqqabGT raw=1469239 trailer=true cleanLen=1469214 keyLength=16 xorKey=186 gutter=4
+1795594108.585 11026 14294 15655 D AedexDebug: PAGE_DATA handle=x7Xl5WhTVkeNA_SSr2W62L2tof_ZuH-AQj-R40kCGnsQeRpg63vJwVeOg8GwhlouNQkw1Iev3_xLmh-Jv8mpXdJEmK7DBsUnwuhXJFNJhPqqabGT url=https://blayvia.com/lector/p/x7Xl5WhTVkeNA_SSr2W62L2tof_ZuH-AQj-R40kCGnsQeRpg63vJwVeOg8GwhlouNQkw1Iev3_xLmh-Jv8mpXdJEmK7DBsUnwuhXJFNJhPqqabGT/?q=hq key=33393061373737663862393039656532
+1795594108.589 11026 14294 15655 D AedexDebug: handle=x7Xl5WhTVkeNA_SSr2W62L2tof_ZuH-AQj-R40kCGnsQeRpg63vJwVeOg8GwhlouNQkw1Iev3_xLmh-Jv8mpXdJEmK7DBsUnwuhXJFNJhPqqabGT stage=xorComplete xorKey=186 header=52494646166B1600
+1795594109.021 11026 14294 15655 D AedexDebug: handle=x7Xl5WhTVkeNA_SSr2W62L2tof_ZuH-AQj-R40kCGnsQeRpg63vJwVeOg8GwhlouNQkw1Iev3_xLmh-Jv8mpXdJEmK7DBsUnwuhXJFNJhPqqabGT stage=bitmap width=824 height=10064 gutter=4
+1795594109.021 11026 14294 15655 D AedexDebug: handle=x7Xl5WhTVkeNA_SSr2W62L2tof_ZuH-AQj-R40kCGnsQeRpg63vJwVeOg8GwhlouNQkw1Iev3_xLmh-Jv8mpXdJEmK7DBsUnwuhXJFNJhPqqabGT stage=slices count=64 output=760x10000
+1795594110.163 11026 14294 15655 D AedexDebug: handle=MKPdkQcSHSNgiLidZSzxHmApgsH97cBvHEl4VKLUTH1awW_HDXGxvMz_4ATFDguysSNgCIzOgMmRJoZ7OFBnyw57RkFbpPKcu5gOpNFBvoo815cZ raw=900283 trailerLength=23
+1795594110.164 11026 14294 15655 D AedexDebug: handle=MKPdkQcSHSNgiLidZSzxHmApgsH97cBvHEl4VKLUTH1awW_HDXGxvMz_4ATFDguysSNgCIzOgMmRJoZ7OFBnyw57RkFbpPKcu5gOpNFBvoo815cZ decodedMagic=AEDE5801 keyLength=16
+1795594110.164 11026 14294 15655 D AedexDebug: handle=MKPdkQcSHSNgiLidZSzxHmApgsH97cBvHEl4VKLUTH1awW_HDXGxvMz_4ATFDguysSNgCIzOgMmRJoZ7OFBnyw57RkFbpPKcu5gOpNFBvoo815cZ raw=900283 trailer=true cleanLen=900258 keyLength=16 xorKey=186 gutter=4
+1795594110.165 11026 14294 15655 D AedexDebug: PAGE_DATA handle=MKPdkQcSHSNgiLidZSzxHmApgsH97cBvHEl4VKLUTH1awW_HDXGxvMz_4ATFDguysSNgCIzOgMmRJoZ7OFBnyw57RkFbpPKcu5gOpNFBvoo815cZ url=https://blayvia.com/lector/p/MKPdkQcSHSNgiLidZSzxHmApgsH97cBvHEl4VKLUTH1awW_HDXGxvMz_4ATFDguysSNgCIzOgMmRJoZ7OFBnyw57RkFbpPKcu5gOpNFBvoo815cZ/?q=hq key=39333133663163323836333438383039
+1795594110.169 11026 14294 15655 D AedexDebug: handle=MKPdkQcSHSNgiLidZSzxHmApgsH97cBvHEl4VKLUTH1awW_HDXGxvMz_4ATFDguysSNgCIzOgMmRJoZ7OFBnyw57RkFbpPKcu5gOpNFBvoo815cZ stage=xorComplete xorKey=186 header=524946469ABC0D00
+1795594110.529 11026 14294 15655 D AedexDebug: handle=MKPdkQcSHSNgiLidZSzxHmApgsH97cBvHEl4VKLUTH1awW_HDXGxvMz_4ATFDguysSNgCIzOgMmRJoZ7OFBnyw57RkFbpPKcu5gOpNFBvoo815cZ stage=bitmap width=824 height=10064 gutter=4
+1795594110.530 11026 14294 15655 D AedexDebug: handle=MKPdkQcSHSNgiLidZSzxHmApgsH97cBvHEl4VKLUTH1awW_HDXGxvMz_4ATFDguysSNgCIzOgMmRJoZ7OFBnyw57RkFbpPKcu5gOpNFBvoo815cZ stage=slices count=64 output=760x10000
+1795594111.546 11026 14294 15655 D AedexDebug: handle=AndwqCFNJ6RNngzJzjXDc9cSyd94xJ9Qq8X68Z35fW6qz6h31DiOeyUGeVLibxn9Hc3zisr6X2mzVe_ZzsM1OghabAT37gk29FTdZ0TIzOpyX0Oq raw=638519 trailerLength=23
+1795594111.547 11026 14294 15655 D AedexDebug: handle=AndwqCFNJ6RNngzJzjXDc9cSyd94xJ9Qq8X68Z35fW6qz6h31DiOeyUGeVLibxn9Hc3zisr6X2mzVe_ZzsM1OghabAT37gk29FTdZ0TIzOpyX0Oq decodedMagic=AEDE5801 keyLength=16
+1795594111.547 11026 14294 15655 D AedexDebug: handle=AndwqCFNJ6RNngzJzjXDc9cSyd94xJ9Qq8X68Z35fW6qz6h31DiOeyUGeVLibxn9Hc3zisr6X2mzVe_ZzsM1OghabAT37gk29FTdZ0TIzOpyX0Oq raw=638519 trailer=true cleanLen=638494 keyLength=16 xorKey=186 gutter=4
+1795594111.547 11026 14294 15655 D AedexDebug: PAGE_DATA handle=AndwqCFNJ6RNngzJzjXDc9cSyd94xJ9Qq8X68Z35fW6qz6h31DiOeyUGeVLibxn9Hc3zisr6X2mzVe_ZzsM1OghabAT37gk29FTdZ0TIzOpyX0Oq url=https://blayvia.com/lector/p/AndwqCFNJ6RNngzJzjXDc9cSyd94xJ9Qq8X68Z35fW6qz6h31DiOeyUGeVLibxn9Hc3zisr6X2mzVe_ZzsM1OghabAT37gk29FTdZ0TIzOpyX0Oq/?q=hq key=63393639323861653239333263333366
+1795594111.549 11026 14294 15655 D AedexDebug: handle=AndwqCFNJ6RNngzJzjXDc9cSyd94xJ9Qq8X68Z35fW6qz6h31DiOeyUGeVLibxn9Hc3zisr6X2mzVe_ZzsM1OghabAT37gk29FTdZ0TIzOpyX0Oq stage=xorComplete xorKey=186 header=5249464616BE0900
+1795594111.818 11026 14294 15655 D AedexDebug: handle=AndwqCFNJ6RNngzJzjXDc9cSyd94xJ9Qq8X68Z35fW6qz6h31DiOeyUGeVLibxn9Hc3zisr6X2mzVe_ZzsM1OghabAT37gk29FTdZ0TIzOpyX0Oq stage=bitmap width=824 height=10064 gutter=4
+1795594111.819 11026 14294 15655 D AedexDebug: handle=AndwqCFNJ6RNngzJzjXDc9cSyd94xJ9Qq8X68Z35fW6qz6h31DiOeyUGeVLibxn9Hc3zisr6X2mzVe_ZzsM1OghabAT37gk29FTdZ0TIzOpyX0Oq stage=slices count=64 output=760x10000
+1795594112.802 11026 14294 15655 D AedexDebug: handle=6vO3cmki3ZUbwmdSCDUEzmtH90gJWcoO0eEJqJkvgCCSeWTBB1YkajZ0PSsa5hiy8EqG-_ZTUyYQHDC-AMCXgKIhlujScz1cda0dv0su1wK3z8GY raw=704931 trailerLength=23
+1795594112.802 11026 14294 15655 D AedexDebug: handle=6vO3cmki3ZUbwmdSCDUEzmtH90gJWcoO0eEJqJkvgCCSeWTBB1YkajZ0PSsa5hiy8EqG-_ZTUyYQHDC-AMCXgKIhlujScz1cda0dv0su1wK3z8GY decodedMagic=AEDE5801 keyLength=16
+1795594112.803 11026 14294 15655 D AedexDebug: handle=6vO3cmki3ZUbwmdSCDUEzmtH90gJWcoO0eEJqJkvgCCSeWTBB1YkajZ0PSsa5hiy8EqG-_ZTUyYQHDC-AMCXgKIhlujScz1cda0dv0su1wK3z8GY raw=704931 trailer=true cleanLen=704906 keyLength=16 xorKey=186 gutter=4
+1795594112.803 11026 14294 15655 D AedexDebug: PAGE_DATA handle=6vO3cmki3ZUbwmdSCDUEzmtH90gJWcoO0eEJqJkvgCCSeWTBB1YkajZ0PSsa5hiy8EqG-_ZTUyYQHDC-AMCXgKIhlujScz1cda0dv0su1wK3z8GY url=https://blayvia.com/lector/p/6vO3cmki3ZUbwmdSCDUEzmtH90gJWcoO0eEJqJkvgCCSeWTBB1YkajZ0PSsa5hiy8EqG-_ZTUyYQHDC-AMCXgKIhlujScz1cda0dv0su1wK3z8GY/?q=hq key=63313631326264643031313634386162
+1795594112.805 11026 14294 15655 D AedexDebug: handle=6vO3cmki3ZUbwmdSCDUEzmtH90gJWcoO0eEJqJkvgCCSeWTBB1YkajZ0PSsa5hiy8EqG-_ZTUyYQHDC-AMCXgKIhlujScz1cda0dv0su1wK3z8GY stage=xorComplete xorKey=186 header=5249464682C10A00
